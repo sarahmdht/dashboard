@@ -1,0 +1,78 @@
+.title {
+    color: #5D6F7A;
+}
+
+.green {
+    color: #91F463;
+}
+
+.back {
+    border: 1px solid black;
+    box-shadow: 1px;
+}
+
+.div1 {
+    background-image: url(../../assets/images/backgrounds/1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    border-radius: 20px;
+}
+
+.main {
+    background-color: #D0EEFF;
+
+}
+
+.welcome {
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 12px;
+    width: 49%;
+    height: 259px;
+
+}
+
+.cards {
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    width: 30%;
+    height: 90px;
+
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 12px;
+    width: 141px;
+    height: 141px;
+}
+
+.card p {
+    font-size: 11px;
+    font-weight: 400;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+
+.full {
+    background-image: linear-gradient(to right, rgba(97, 211, 226, 1), rgba(113, 222, 237, 1), rgba(130, 235, 250, 1));
+    border: 2px solid rgba(246, 204, 51, 1);
+}
+
+.box {
+    box-shadow: 0px 0px 10px rgba(246, 204, 51, 1);
+}
+
+.low {
+    background-image: linear-gradient(to right, rgba(241, 99, 89, 1), rgba(255, 141, 134, 1));
+}
+
+.good {
+    background-image: linear-gradient(to right, rgba(90, 236, 114, 1), rgba(167, 255, 181, 1));
+}
