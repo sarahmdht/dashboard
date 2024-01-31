@@ -1,7 +1,19 @@
 .logo {
 background-color: #fff;
+height: 120;
 }
 
-.menu {
+.bar {
     background-image: url(../../assets/images/backgrounds/Frame\ 16\ \(1\).png);
+    height: 200%;
+}
+
+li a:hover, li a.active {
+    background-image: linear-gradient(to right, rgba(0, 158, 247, 0.2), rgba(0, 158, 247, 0));
+}
+
+.search{
+border-radius: 50px;
+background-color: rgba(255, 255, 255, 0.6);
+
 }
