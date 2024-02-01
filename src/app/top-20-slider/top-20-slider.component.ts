@@ -19,7 +19,7 @@ export class Top20SliderComponent {
         slideWidth: 110,
       minSlides: 2,
       maxSlides: 6,
-      slideMargin: 20
+      slideMargin: 40,
         });
     });
   }
