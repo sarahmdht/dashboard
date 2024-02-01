@@ -122,3 +122,15 @@ tr:nth-child(even) {
 .prev {
     box-shadow: 5px 0px 2px #33b4ff7c;
 }
+
+.rend {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+}
+
+.circlebadge {
+        padding: 5px;
+        border-radius: 50%;
+        font-size: 10px;
+    
+}
