@@ -15,3 +15,11 @@ h4 {
 h5 {
     font-size: 0.74rem;
 }
+
+.greytext {
+    color: #849396;
+}
+
+.fs-6 {
+    line-height: 20%;
+}
