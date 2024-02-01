@@ -76,3 +76,9 @@ button {
 .good {
     background-image: linear-gradient(to right, rgba(90, 236, 114, 1), rgba(167, 255, 181, 1));
 }
+
+.top20 {
+   background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px;
+}
