@@ -54,7 +54,7 @@
     font-weight: 400;
 }
 
-button {
+.dots {
     border: none;
     background-color: transparent;
     color: white;
@@ -78,13 +78,47 @@ button {
 }
 
 .top20 {
-   background-color: #fff;
+    background-color: #fff;
     border-radius: 12px;
     box-shadow: 0px 0px 10px;
 }
 
-.rend {
-    border: 1px solid #D8D8D8;
+table {
     border-radius: 12px;
+    box-shadow: 0px 0px 5px #DDD;
 }
 
+table,
+th,
+td {
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 15px;
+}
+
+.s {
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #F8FCFF;
+}
+
+.chartnav {
+    background-color: #33b5ff;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+}
+
+.next {
+    box-shadow: -5px 0px 2px #33b4ff7c;
+}
+
+.prev {
+    box-shadow: 5px 0px 2px #33b4ff7c;
+}
