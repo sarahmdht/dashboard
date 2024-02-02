@@ -23,3 +23,27 @@ h5 {
 .line {
     line-height: 20%;
 }
+
+.top20 {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px;
+}
+
+.welcome {
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 12px;
+    width: 49%;
+    height: 259px;
+}
+
+.rend {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+}
+
+.main {
+    background-color: #D0EEFF;
+
+}

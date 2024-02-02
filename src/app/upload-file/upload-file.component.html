@@ -1,0 +1,8 @@
+<div class="card-body w-100 h-100">
+  <div class="dropzone" (drop)="onFileDropped($event)" (dragover)="onDragOver($event)">
+    <img src="../../assets/images/icons/upload.png" width="53" height="48" alt="upload cloud">
+    <p class="fs-6">Arrastrar Soltar Imagenes</p>
+    <button type="button" class="text-primary" (click)="openFolderDialog()">o navegar</button>
+  </div>
+  <input type="file" class="form-control" (change)="onFileSelected($event)" style="display: none;">
+</div>

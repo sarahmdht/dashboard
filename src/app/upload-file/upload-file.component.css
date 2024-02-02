@@ -1,0 +1,17 @@
+.dropzone {
+    border: 2px dashed #33b5ff;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    background-image: linear-gradient(rgba(247, 251, 254, 1), rgba(234, 243, 248, 1));
+  }
+  
+  .dropzone:hover {
+    border-color: #333;
+  }
+
+  button {
+    border: none;
+    background-color: transparent;
+  }
