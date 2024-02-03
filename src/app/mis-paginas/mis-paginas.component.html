@@ -1,3 +1,317 @@
-<div class=" container-fluid d-flex border-bottom p-3 align-items-baseline">
-    <h2>Mis Paginas</h2>
+<div class=" container-fluid d-flex border-bottom p-3 justify-content-between align-items-baseline">
+  <div class="d-flex align-items-baseline">
+    <h2>Mi Paginas</h2>
+  </div>
+  <img src="../../assets/images/icons/info.png" width="25" height="25" class="m-3" title="More info..." alt="">
 </div>
+
+<div class="main container-fluid p-3">
+  <div class="top20 p-3">
+    <div class="border-bottom m-0">
+      <!-- tabs  -->
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" data-bs-toggle="tab" href="#consecutivos">Consecutivos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-bs-toggle="tab" href="#miInversion">Mi Inversion</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-bs-toggle="tab" href="#historical">Historical Inversiones</a>
+        </li>
+      </ul>
+
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <!-- tab1 -->
+        <div class="tab-pane container active m-3" id="consecutivos">
+          <!-- form    -->
+          <form class="d-flex align-items-baseline">
+            <label for="Nombre" class="form-label me-2">Buscar Por: </label>
+            <input type="text" id="Nombre" name="Nombre" placeholder="Nombre" class="form-control bg-secondary-subtle">
+            <input type="text" id="primer" name="primer" placeholder="Primer Appelido"
+              class="form-control m-3 bg-secondary-subtle">
+            <input type="text" id="consecutivo" name="consecutivo" placeholder="Consecutivo"
+              class="form-control bg-secondary-subtle">
+            <button type="submit" class="btn searchbutton m-2"> <i class="bi bi-search"></i></button>
+          </form>
+
+          <!-- collapsing data 1 -->
+
+          <div class="card mb-3">
+            <div class="card-header name d-flex justify-content-between">
+              <a class="btn" data-bs-toggle="collapse" href="#403718" (click)="toggleCollapse()">
+                <span *ngIf="isCollapsed" class="me-2"><img src="../../assets/images/icons/plus.png"></span>
+                <span *ngIf="!isCollapsed" class="me-2"><img src="../../assets/images/icons/dash.png"></span>
+                403718 - ANDREA YAMILET RANGEL QUIROZ
+              </a>
+              <h4 class="btn">Paginas</h4>
+            </div>
+            <div id="403718" class="collapse" data-bs-parent="#accordion">
+              <div class="card-body show data p-0">
+                <div class="card-header data m-0 p-2 d-flex justify-content-between align-items-baseline">
+                  <a class="btn" data-bs-toggle="collapse" href="#collapseOne1" (click)="toggleCollapse()">
+                    <span *ngIf="isCollapsed" class="me-2"><img src="../../assets/images/icons/plus.png"></span>
+                    <span *ngIf="!isCollapsed" class="me-2"><img src="../../assets/images/icons/dash.png"></span>
+                    72.2
+                  </a>
+                  <div>
+                    <button class="button1 button accbutton mx-2" type="button">Agregar Persona</button>
+                    <button class="button2 button accbutton" type="button">Invertir</button>
+                  </div>
+                </div>
+                <div id="collapseOne1" class="collapse" data-bs-parent="#accordion">
+                  <div class="card-body">
+                    Lorem ipsum..
+                  </div>
+                </div>
+                <div class="card-header m-0 p-0">
+                  <a class="btn" data-bs-toggle="collapse" href="#collapseOne2">
+                    72.2
+                  </a>
+                </div>
+                <div id="collapseOne2" class="collapse" data-bs-parent="#accordion">
+                  <div class="card-body">
+                    Lorem ipsum..
+                  </div>
+                </div>
+
+                <div class="card-header m-0 p-0">
+                  <a class="btn" data-bs-toggle="collapse" href="#collapseOne3">
+                    72.2
+                  </a>
+                </div>
+                <div id="collapseOne3" class="collapse" data-bs-parent="#accordion">
+                  <div class="card-body">
+                    Lorem ipsum..
+                  </div>
+                </div>
+
+                <div class="card-header m-0 p-0">
+                  <a class="btn" data-bs-toggle="collapse" href="#collapseOne4">
+                    72.2
+                  </a>
+                </div>
+                <div id="collapseOne4" class="collapse" data-bs-parent="#accordion">
+                  <div class="card-body">
+                    Lorem ipsum..
+                  </div>
+                </div>
+
+                <div class="card-header m-0 p-0">
+                  <a class="btn" data-bs-toggle="collapse" href="#collapseOne5">
+                    72.2
+                  </a>
+                </div>
+                <div id="collapseOne5" class="collapse" data-bs-parent="#accordion">
+                  <div class="card-body">
+                    Lorem ipsum..
+                  </div>
+                </div>
+
+                <div class="card-header m-0 p-0">
+                  <a class="btn" data-bs-toggle="collapse" href="#collapseOne6">
+                    72.2
+                  </a>
+                </div>
+                <div id="collapseOne6" class="collapse" data-bs-parent="#accordion">
+                  <div class="card-body">
+                    Lorem ipsum..
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- collapsing data 2 -->
+
+          <div class="card mb-3">
+            <div class="card-header name">
+              <a class="btn" data-bs-toggle="collapse" href="#403718">
+                403718 - ANDREA YAMILET RANGEL QUIROZ
+              </a>
+            </div>
+            <div id="403718" class="collapse" data-bs-parent="#accordion">
+              <div class="card-body data p-0">
+                <div class="card-header data m-0 p-0">
+                  <a class="btn" data-bs-toggle="collapse" href="#collapseOne1">
+                    72.2
+                  </a>
+                </div>
+                <div id="collapseOne1" class="collapse" data-bs-parent="#accordion">
+                  <div class="card-body">
+                    Lorem ipsum..
+                  </div>
+                </div>
+                <div class="card-header m-0 p-0">
+                  <a class="btn" data-bs-toggle="collapse" href="#collapseOne2">
+                    72.2
+                  </a>
+                </div>
+                <div id="collapseOne2" class="collapse" data-bs-parent="#accordion">
+                  <div class="card-body">
+                    Lorem ipsum..
+                  </div>
+                </div>
+
+                <div class="card-header m-0 p-0">
+                  <a class="btn" data-bs-toggle="collapse" href="#collapseOne3">
+                    72.2
+                  </a>
+                </div>
+                <div id="collapseOne3" class="collapse show" data-bs-parent="#accordion">
+                  <div class="card-body">
+                    Lorem ipsum..
+                  </div>
+                </div>
+
+                <div class="card-header m-0 p-0">
+                  <a class="btn" data-bs-toggle="collapse" href="#collapseOne4">
+                    72.2
+                  </a>
+                </div>
+                <div id="collapseOne4" class="collapse show" data-bs-parent="#accordion">
+                  <div class="card-body">
+                    Lorem ipsum..
+                  </div>
+                </div>
+
+                <div class="card-header m-0 p-0">
+                  <a class="btn" data-bs-toggle="collapse" href="#collapseOne5">
+                    72.2
+                  </a>
+                </div>
+                <div id="collapseOne5" class="collapse show" data-bs-parent="#accordion">
+                  <div class="card-body">
+                    Lorem ipsum..
+                  </div>
+                </div>
+
+                <div class="card-header m-0 p-0">
+                  <a class="btn" data-bs-toggle="collapse" href="#collapseOne6">
+                    72.2
+                  </a>
+                </div>
+                <div id="collapseOne6" class="collapse show" data-bs-parent="#accordion">
+                  <div class="card-body">
+                    Lorem ipsum..
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- collapsing data 1 -->
+
+          <div class="card">
+            <div class="card-header">
+              <a class="btn" data-bs-toggle="collapse" href="#403718">
+                403718 - ANDREA YAMILET RANGEL QUIROZ
+              </a>
+            </div>
+            <div id="403718" class="collapse show" data-bs-parent="#accordion">
+              <div class="card-body p-0">
+                <div class="card-header m-0 p-0">
+                  <a class="btn" data-bs-toggle="collapse" href="#collapseOne1">
+                    72.2
+                  </a>
+                </div>
+                <div id="collapseOne1" class="collapse show" data-bs-parent="#accordion">
+                  <div class="card-body">
+                    Lorem ipsum..
+                  </div>
+                </div>
+                <div class="card-header m-0 p-0">
+                  <a class="btn" data-bs-toggle="collapse" href="#collapseOne2">
+                    72.2
+                  </a>
+                </div>
+                <div id="collapseOne2" class="collapse" data-bs-parent="#accordion">
+                  <div class="card-body">
+                    Lorem ipsum..
+                  </div>
+                </div>
+
+                <div class="card-header m-0 p-0">
+                  <a class="btn" data-bs-toggle="collapse" href="#collapseOne3">
+                    72.2
+                  </a>
+                </div>
+                <div id="collapseOne3" class="collapse show" data-bs-parent="#accordion">
+                  <div class="card-body">
+                    Lorem ipsum..
+                  </div>
+                </div>
+
+                <div class="card-header m-0 p-0">
+                  <a class="btn" data-bs-toggle="collapse" href="#collapseOne4">
+                    72.2
+                  </a>
+                </div>
+                <div id="collapseOne4" class="collapse show" data-bs-parent="#accordion">
+                  <div class="card-body">
+                    Lorem ipsum..
+                  </div>
+                </div>
+
+                <div class="card-header m-0 p-0">
+                  <a class="btn" data-bs-toggle="collapse" href="#collapseOne5">
+                    72.2
+                  </a>
+                </div>
+                <div id="collapseOne5" class="collapse show" data-bs-parent="#accordion">
+                  <div class="card-body">
+                    Lorem ipsum..
+                  </div>
+                </div>
+
+                <div class="card-header m-0 p-0">
+                  <a class="btn" data-bs-toggle="collapse" href="#collapseOne6">
+                    72.2
+                  </a>
+                </div>
+                <div id="collapseOne6" class="collapse show" data-bs-parent="#accordion">
+                  <div class="card-body">
+                    Lorem ipsum..
+                  </div>
+                </div>
+
+
+                <div class="card">
+                  <div class="card-header m-0 p-0">
+                    <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+                      Collapsible Group Item #2
+                    </a>
+                  </div>
+                  <div id="collapseTwo" class="collapse" data-bs-parent="#accordion2">
+                    <div class="card-body">
+                      Lorem ipsum..
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-header m-0 p-0">
+                    <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+                      Collapsible Group Item #3
+                    </a>
+                  </div>
+                  <div id="collapseThree" class="collapse" data-bs-parent="#accordion3">
+                    <div class="card-body">
+                      Lorem ipsum..
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- tab2 -->
+          <div class="tab-pane container fade" id="miInversion">..2222.</div>
+          <div class="tab-pane container fade" id="historical">..3333.</div>
+        </div>
+      </div>
+    </div>
+  </div>
