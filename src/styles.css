@@ -47,3 +47,9 @@ h5 {
     background-color: #D0EEFF;
 
 }
+
+.bg-form-input {
+    background-color: #F5F8FA !important;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

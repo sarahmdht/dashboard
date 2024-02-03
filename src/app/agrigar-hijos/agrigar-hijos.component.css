@@ -1,0 +1,71 @@
+button {
+    border: 1px solid;
+    border-radius: 12px;
+    color: white;
+    line-height: .5rem;
+    text-wrap: nowrap;
+}
+
+.button1 {
+    background-image: linear-gradient(rgba(139, 214, 255, 1), rgba(53, 183, 255, 1));
+    border-color: #3C99CD;
+}
+
+.button2 {
+    background-image: linear-gradient(rgba(134, 231, 138, 1), rgba(100, 201, 91, 1));
+    border-color: #3CAC34;
+}
+
+
+.shadow {
+    box-shadow: 0px 0px 1px #fff;
+}
+
+.width {
+    width: 180px;
+}
+
+table {
+    box-shadow: 0px 0px 5px #DDD;
+    border-bottom: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+
+th {
+    background-color: #F8FCFF;
+    text-wrap: nowrap;
+    font-size: 14px;
+}
+
+th,
+td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(odd) {
+    background-color: #fafafa;
+}
+
+.chartnav {
+    background-color: #33b5ff;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    height: 2rem;
+}
+
+.next {
+    box-shadow: -5px 0px 2px #33b4ff7c;
+}
+
+.prev {
+    box-shadow: 5px 0px 2px #33b4ff7c;
+}
+
+.page-link {
+    border: none;
+    color: #849396;
+}

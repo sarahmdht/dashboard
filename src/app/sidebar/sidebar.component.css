@@ -9,6 +9,8 @@ height: 120;
 }
 
 li a:hover, .nav-pills .nav-link.active {
+    border-left: 6px solid;
+    border-image: linear-gradient(rgba(129, 209, 255, 1), rgba(0, 158, 247, 1));
     background-image: linear-gradient(to right, rgba(0, 158, 247, 0.2), rgba(0, 158, 247, 0));
 }
 
