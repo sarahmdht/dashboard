@@ -195,14 +195,14 @@
     <div class="p-3">
         <div class="d-flex justify-content-between">
             <div>
-                <h4>Communidades Vendiendo</h4>
+                <h2>Communidades Vendiendo</h2>
                 <p class="fs-6 greytext">Instalado 30 dias</p>
             </div>
             <div>
                 <form >
                     <div class="input-group">
                         <span class="input-group-text text-bg-light"><i class="bi bi-calendar-minus"></i></span>
-                        <select class="form-select bg-white" disabled>
+                        <select class="form-select bg-white">
                             <option>01/02/2024</option>
                             <option>02/2/2024</option>
                             <option>03/02/2024</option>
@@ -214,12 +214,12 @@
         </div>
 
         <div class="top20 p-3">
-            <div class="d-flex justify-content-center align-items-center ">
-                <img src="../../assets/images/bargraph.png" width="823" height="378" alt="">
+            <div class="d-flex justify-content-center align-items-center chart1 my-5">
+                <app-bar-chart></app-bar-chart>
             </div>
             <div class="d-flex justify-content-between">
                 <button class="chartnav prev" type="button">
-                    << Previous</button>
+                    &#60;&#60; Previous</button>
                         <button class="chartnav next" type="button"> Next >> </button>
             </div>
         </div>
@@ -236,7 +236,7 @@
                 <form>
                     <div class="input-group">
                         <span class="input-group-text text-bg-light"><i class="bi bi-calendar-minus"></i></span>
-                        <select class="form-select bg-white" disabled>
+                        <select class="form-select bg-white">
                             <option>semana 3</option>
                             <option>Semana 4</option>
                             <option>Semana 5</option>
@@ -431,7 +431,9 @@
 
 
                 </table>
-                <img src="../../assets/images/bar2.png" width="600" height="" alt="">
+                <div class="col-7 rend">
+                <app-instalado-chart></app-instalado-chart>
+                </div>
             </div>
         </div>
     </div>
@@ -447,7 +449,7 @@
                 <form>
                     <div class="input-group">
                         <span class="input-group-text text-bg-light"><i class="bi bi-calendar-minus"></i></span>
-                        <select class="form-select bg-white" disabled>
+                        <select class="form-select bg-white">
                             <option>semana 3</option>
                             <option>Semana 4</option>
                             <option>Semana 5</option>
@@ -457,7 +459,7 @@
                 <form>
                     <div class="input-group">
                         <span class="input-group-text text-bg-light"><i class="bi bi-calendar-minus"></i></span>
-                        <select class="form-select bg-white" disabled>
+                        <select class="form-select bg-white">
                             <option>semana 3</option>
                             <option>Semana 4</option>
                             <option>Semana 5</option>

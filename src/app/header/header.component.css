@@ -85,3 +85,13 @@ input:checked + .slider:before {
 .slider.round:before {
     border-radius: 50%;
 }
+
+/* login button  */
+.but {
+    border: 0;
+    background-color: transparent;
+}
+
+.dropdown-toggle::after {
+    display: none;
+  }

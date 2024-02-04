@@ -136,3 +136,8 @@ tr:nth-child(even) {
     border-radius: 12px;
     background-image: linear-gradient(rgba(251, 227, 244, 1), rgba(241, 210, 233, 1));
 }
+
+.chart1 {
+    width: 823px;
+    height: 378px;
+}
