@@ -16,8 +16,9 @@
     border-radius: 5px;
 }
 
-input{
-  width: 240px;
+.bg-form-input{
+  width: 220px;
+  background-color: #F5F8FA;
 }
 
 .name {
@@ -46,3 +47,55 @@ input{
     border-color: #3CAC34;
 }
 
+.chartnav {
+    background-color: #33b5ff;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    padding-top: 0;
+    line-height: 1.7rem;
+}
+
+.next {
+    box-shadow: -5px 0px 2px #33b4ff7c;
+}
+
+.prev {
+    box-shadow: 5px 0px 2px #33b4ff7c;
+}
+
+.page-link {
+    border: none;
+    color: #849396;
+}
+
+
+
+.filtertab {
+    background-color: #F3FBFF;
+    box-shadow: 0px 2px 2px #B1C9D6;
+}
+
+table {
+    box-shadow: 0px 0px 5px #DDD;
+    border-bottom: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+
+th {
+    background-color: #F8FCFF;
+    text-wrap: nowrap;
+}
+
+th,
+td {
+    padding: 5px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    font-size: 10px;
+}
+
+tr:nth-child(odd) {
+    background-color: #fafafa;
+}

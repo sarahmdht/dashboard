@@ -48,8 +48,14 @@ h5 {
 
 }
 
-.bg-form-input {
+input {
     background-color: #F5F8FA !important;
 }
+
+.page-link.active {
+    background-color: #F3F2F2 !important;
+    border-radius: 50%;
+}
+
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
