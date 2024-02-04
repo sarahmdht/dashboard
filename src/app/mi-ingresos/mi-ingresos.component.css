@@ -1,0 +1,24 @@
+table {
+    box-shadow: 0px 0px 5px #DDD;
+    border-bottom: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+
+th {
+    background-color: #F8FCFF;
+    text-wrap: nowrap;
+}
+
+th,
+td {
+    padding: 7px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+}
+
+tr:nth-child(odd) {
+    background-color: #fafafa;
+}
+
