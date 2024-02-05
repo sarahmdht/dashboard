@@ -8,9 +8,9 @@ import { MiIngresosComponent } from './mi-ingresos/mi-ingresos.component';
 
 export const routes: Routes = [
     { path: '', component: MiperfileComponent},
-    { path: 'capturadeventa', component: CapturaDeVentaComponent},
-    { path: 'agregarHijos', component: AgrigarHijosComponent},
-    { path: 'miDiagrama', component: MiDiagramaComponent},
-    { path: 'misPaginas', component: MisPaginasComponent},
-    { path: 'miIngresos', component: MiIngresosComponent},
+    { path: 'capturadeventa', component: CapturaDeVentaComponent },
+    { path: 'agregarHijos', component: AgrigarHijosComponent },
+    { path: 'miDiagrama', component: MiDiagramaComponent },
+    { path: 'misPaginas', component: MisPaginasComponent },
+    { path: 'miIngresos', component: MiIngresosComponent },
 ];
