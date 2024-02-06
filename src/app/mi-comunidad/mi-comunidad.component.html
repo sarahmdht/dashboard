@@ -1,1 +1,256 @@
-<p>mi-comunidad works!</p>
+<div class="d-flex p-2 mx-5 justify-content-between align-items-center">
+    <div class="mt-3">
+        <h2>Mi Comunidad</h2>
+    </div>
+    <img src="../../assets/images/icons/info.png" width="25" height="25" class="m-3" title="More info..." alt="">
+</div>
+
+<!-- content  -->
+<div class="main container-fluid p-3">
+    <div class="top20 p-5 m-3">
+        
+        <!-- numbers  -->
+        <div class="d-flex justify-content-between mx-3">
+            <div class="greytext">
+                <p class="fs-6 text-center">Instalado 30 Dias</p>
+                <p class="display-3 fw-medium text-center m-3">$0.00</p>
+
+            </div>
+            <div class="greytext">
+                <p class="fs-6 text-center">Comisiones por Mi Comunidad</p>
+                <p class="display-3 fw-medium text-center m-3">$0.00</p>
+
+            </div>
+            <div class="greytext">
+                <p class="fs-6 text-center">Comision Total</p>
+                <p class="display-3 fw-medium text-center m-3">$0.00</p>
+
+            </div>
+        </div>
+
+        <!-- form  -->
+        <div class="d-flex align-items-end justify-content-between">
+            <div>
+                <label for="metamanager" class="form-label fw-medium">Metamanager </label>
+                <select id="metamanager" class="form-select bg-form-input mx-2 shad">
+                    <option>Andrea Yamilet Rangel Quiroz</option>
+                    <option>Andrea Yamilet Rangel Quiroz</option>
+                    <option>Andrea Yamilet Rangel Quiroz</option>
+                </select>
+            </div>
+
+            <div class="d-flex">
+                <form class="d-flex">
+                    <div class="input-group shad">
+                        <span class="input-group-text text-bg-light"><i class="bi bi-calendar-minus"></i></span>
+                        <select class="form-select bg-white">
+                            <option></option>
+                            <option>1/23/24</option>
+                            <option>1/24/24</option>
+                        </select>
+                    </div>
+                    <div class="input-group shad">
+                        <span class="input-group-text text-bg-light"><i class="bi bi-calendar-minus"></i></span>
+                        <select class="form-select bg-white">
+                            <option>Semana 4</option>
+                            <option>Semana 3</option>
+                            <option>Seman 1</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+
+            <div class="input-group width">
+                <input type="search" class="search form-control bg-form-input p-2 border-0 shad" placeholder="Search">
+                <button class=" searchbutton input-group-text" type="button"> <i class="bi bi-search"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- table -->
+        <!-- sorting data and buttons need API and some logic
+angular material sorting is installed and ready to use -->
+
+    <div class=" d-flex justify-content-center">
+        <table class="table my-4">
+          <tr style="background-color: #F3fbff;">
+            <th>Metamanager</th>
+            <th>Vendido</th>
+            <th>Abierto</th>
+            <th>Cancelado</th>
+            <th>Instalado</th>
+            <th>Mi Comision</th>
+            <th>Comision</th>
+          </tr>
+          <tr class="accordion" data-bs-toggle="collapse" href="#403718" (click)="toggleCollapse()">
+            <td class="justify-content-start d-flex align-items-center">
+              <span *ngIf="isCollapsed" class="me-2"><i class="bi bi-chevron-right" style="color: #33B5FF;"></i></span>
+              <span *ngIf="!isCollapsed" class="me-2"><i class="bi bi-chevron-down" style="color: #33B5FF;"></i></span>
+              <img src="../../assets/images/avatar/Ellipse 3.png" width="40" height="40" alt="">
+              Andrea Yamilet Rangel Quiroz</td>
+            <td><div class="d-flex">
+              $33010
+              <img src="../../assets/images/icons/Frame 266.png" width="21" height="21" class="mx-2" alt="">
+              <img src="../../assets/images/icons/Frame 287.png" width="21" height="21" alt="">
+            </div></td>
+            <td class="greytext">H C<br/>C 20</td>
+            <td style="color: #33B5FF;">$0</td>
+            <td style="color: #33B5FF;">$0</td>
+            <td style="color: #33B5FF;">$0</td>
+            <td style="color: #33B5FF;">$0</td>
+          </tr>
+          <tr>
+            <td class="p-0 border-0" colspan="8">
+              <div id="403718" class="collapse inner" data-bs-parent="#accordion">
+                lorem ipsum..
+              </div>
+            </td>
+  
+          </tr>
+          <tr class="accordion" data-bs-toggle="collapse" href="#4037182" (click)="toggleCollapse()">
+            <td class="justify-content-start d-flex align-items-center">
+              <span *ngIf="isCollapsed" class="me-2"><i class="bi bi-chevron-right" style="color: #33B5FF;"></i></span>
+              <span *ngIf="!isCollapsed" class="me-2"><i class="bi bi-chevron-down" style="color: #33B5FF;"></i></span>
+              <img src="../../assets/images/avatar/Ellipse 3.png" width="40" height="40" alt="">
+              Andrea Yamilet Rangel Quiroz</td>
+            <td><div class="d-flex">
+              $33010
+              <img src="../../assets/images/icons/Frame 266.png" width="21" height="21" class="mx-2" alt="">
+              <img src="../../assets/images/icons/Frame 287.png" width="21" height="21" alt="">
+            </div></td>
+            <td class="greytext">H C<br/>C 20</td>
+            <td style="color: #33B5FF;">$0</td>
+            <td style="color: #33B5FF;">$0</td>
+            <td style="color: #33B5FF;">$0</td>
+            <td style="color: #33B5FF;">$0</td>
+          </tr>
+          <tr>
+            <td class="p-0 border-0" colspan="8">
+              <div id="4037182" class="collapse inner" data-bs-parent="#accordion">
+                lorem ipsum..
+              </div>
+            </td>
+  
+          </tr>
+          <tr class="accordion" data-bs-toggle="collapse" href="#4037183" (click)="toggleCollapse()">
+            <td class="justify-content-start d-flex align-items-center">
+              <span *ngIf="isCollapsed" class="me-2"><i class="bi bi-chevron-right" style="color: #33B5FF;"></i></span>
+              <span *ngIf="!isCollapsed" class="me-2"><i class="bi bi-chevron-down" style="color: #33B5FF;"></i></span>
+              <img src="../../assets/images/avatar/Ellipse 3.png" width="40" height="40" alt="">
+              Andrea Yamilet Rangel Quiroz</td>
+            <td><div class="d-flex">
+              $33010
+              <img src="../../assets/images/icons/Frame 266.png" width="21" height="21" class="mx-2" alt="">
+              <img src="../../assets/images/icons/Frame 287.png" width="21" height="21" alt="">
+            </div></td>
+            <td class="greytext">H C<br/>C 20</td>
+            <td style="color: #33B5FF;">$0</td>
+            <td style="color: #33B5FF;">$0</td>
+            <td style="color: #33B5FF;">$0</td>
+            <td style="color: #33B5FF;">$0</td>
+          </tr>
+          <tr>
+            <td class="p-0 border-0" colspan="8">
+              <div id="4037183" class="collapse inner" data-bs-parent="#accordion">
+                lorem ipsum..
+              </div>
+            </td>
+  
+          </tr>
+          <tr class="accordion" data-bs-toggle="collapse" href="#4037184" (click)="toggleCollapse()">
+            <td class="justify-content-start d-flex align-items-center">
+              <span *ngIf="isCollapsed" class="me-2"><i class="bi bi-chevron-right" style="color: #33B5FF;"></i></span>
+              <span *ngIf="!isCollapsed" class="me-2"><i class="bi bi-chevron-down" style="color: #33B5FF;"></i></span>
+              <img src="../../assets/images/avatar/Ellipse 3.png" width="40" height="40" alt="">
+              Andrea Yamilet Rangel Quiroz</td>
+            <td><div class="d-flex">
+              $33010
+              <img src="../../assets/images/icons/Frame 266.png" width="21" height="21" class="mx-2" alt="">
+              <img src="../../assets/images/icons/Frame 287.png" width="21" height="21" alt="">
+            </div></td>
+            <td class="greytext">H C<br/>C 20</td>
+            <td style="color: #33B5FF;">$0</td>
+            <td style="color: #33B5FF;">$0</td>
+            <td style="color: #33B5FF;">$0</td>
+            <td style="color: #33B5FF;">$0</td>
+          </tr>
+          <tr>
+            <td class="p-0 border-0" colspan="8">
+              <div id="4037184" class="collapse inner" data-bs-parent="#accordion">
+                lorem ipsum..
+              </div>
+            </td>
+  
+          </tr>
+          <tr class="accordion" data-bs-toggle="collapse" href="#4037185" (click)="toggleCollapse()">
+            <td class="justify-content-start d-flex align-items-center">
+              <span *ngIf="isCollapsed" class="me-2"><i class="bi bi-chevron-right" style="color: #33B5FF;"></i></span>
+              <span *ngIf="!isCollapsed" class="me-2"><i class="bi bi-chevron-down" style="color: #33B5FF;"></i></span>
+              <img src="../../assets/images/avatar/Ellipse 3.png" width="40" height="40" alt="">
+              Andrea Yamilet Rangel Quiroz</td>
+            <td><div class="d-flex">
+              $33010
+              <img src="../../assets/images/icons/Frame 266.png" width="21" height="21" class="mx-2" alt="">
+              <img src="../../assets/images/icons/Frame 287.png" width="21" height="21" alt="">
+            </div></td>
+            <td class="greytext">H C<br/>C 20</td>
+            <td style="color: #33B5FF;">$0</td>
+            <td style="color: #33B5FF;">$0</td>
+            <td style="color: #33B5FF;">$0</td>
+            <td style="color: #33B5FF;">$0</td>
+          </tr>
+          <tr>
+            <td class="p-0 border-0" colspan="8">
+              <div id="4037185" class="collapse inner" data-bs-parent="#accordion">
+                lorem ipsum..
+              </div>
+            </td>
+  
+          </tr>
+          <tr class="accordion" data-bs-toggle="collapse" href="#4037186" (click)="toggleCollapse()">
+            <td class="justify-content-start d-flex align-items-center">
+              <span *ngIf="isCollapsed" class="me-2"><i class="bi bi-chevron-right" style="color: #33B5FF;"></i></span>
+              <span *ngIf="!isCollapsed" class="me-2"><i class="bi bi-chevron-down" style="color: #33B5FF;"></i></span>
+              <img src="../../assets/images/avatar/Ellipse 3.png" width="40" height="40" alt="">
+              Andrea Yamilet Rangel Quiroz</td>
+            <td><div class="d-flex">
+              $33010
+              <img src="../../assets/images/icons/Frame 266.png" width="21" height="21" class="mx-2" alt="">
+              <img src="../../assets/images/icons/Frame 287.png" width="21" height="21" alt="">
+            </div></td>
+            <td class="greytext">H C<br/>C 20</td>
+            <td style="color: #33B5FF;">$0</td>
+            <td style="color: #33B5FF;">$0</td>
+            <td style="color: #33B5FF;">$0</td>
+            <td style="color: #33B5FF;">$0</td>
+          </tr>
+          <tr>
+            <td class="p-0 border-0" colspan="8">
+              <div id="4037186" class="collapse inner" data-bs-parent="#accordion">
+                lorem ipsum..
+              </div>
+            </td>
+  
+          </tr>
+          </table>
+          </div>
+          
+              <!-- pagination  -->
+              <div class="d-flex justify-content-between align-items-center">
+                <button class="chartnav prev" type="button">
+                  &#60;&#60; Previous</button>
+                <div>
+                  <ul class="pagination">
+                    <li class="page-item"><a class="page-link" href="#">&#60;&#60;</a></li>
+                    <li class="page-item"><a class="page-link" href="#">&#60;</a></li>
+                    <li class="page-item"><a class="page-link active" style="color: black;" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" style="color: black;" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">></a></li>
+                    <li class="page-item"><a class="page-link" href="#">>></a></li>
+                  </ul>
+                </div>
+          
+                <button class="chartnav next" type="button"> Next >> </button>
+              </div>
+    </div>
+</div>

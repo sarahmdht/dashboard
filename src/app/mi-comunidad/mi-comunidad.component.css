@@ -1,0 +1,52 @@
+.width {
+    width: 180px;
+}
+
+.searchbutton {
+    background-image: linear-gradient(rgba(140, 214, 255, 1), rgba(51, 181, 255, 1));
+    box-shadow: 0px 0px 5px rgba(51, 181, 255, 1);
+    color: white;
+    border: 0;
+    border-radius: 5px;
+}
+
+.shad {
+    box-shadow: 0px 2px 2px #ddd;
+}
+
+table {
+    box-shadow: 0px 0px 5px #DDD;
+    border-bottom: 1px solid #ddd;
+    border-radius: 10px;
+}
+th,
+td {
+    padding: 7px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+}
+
+
+.chartnav {
+    background-color: #33b5ff;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    padding-top: 0;
+    line-height: 1.7rem;
+}
+
+
+.next {
+    box-shadow: -5px 0px 2px #33b4ff7c;
+}
+
+.prev {
+    box-shadow: 5px 0px 2px #33b4ff7c;
+}
+
+.page-link {
+    border: none;
+    color: #849396;
+}

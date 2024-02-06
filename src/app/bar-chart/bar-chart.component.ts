@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Chart, ChartModule } from 'angular-highcharts';
+import { wrap } from 'highcharts';
 
 
 
@@ -12,6 +13,7 @@ import { Chart, ChartModule } from 'angular-highcharts';
 })
 export class BarChartComponent {
   chart!: Chart;
+  value: any;
   constructor() {
     this.chart = new Chart({
       chart: {
@@ -31,12 +33,12 @@ export class BarChartComponent {
         'Pamela Geogriana Quitana','Arlette Lilian Mata'],
         labels: {
           style: {
-            overflow: 'auto', // Set overflow to 'auto' or 'wrap'
-          whiteSpace: 'normal', // Set whiteSpace to 'normal'
-          rotation: 0 ,
-          }
-        }
-      },
+            },
+          autoRotationLimit:20,
+          },
+
+        },
+      
       yAxis: {
         min: 0,
         max: 1200,
@@ -65,6 +67,7 @@ export class BarChartComponent {
       title: {
         text: undefined // Disable legend
       },
+      
     });
   }
 }

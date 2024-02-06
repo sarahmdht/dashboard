@@ -24,12 +24,14 @@ h5 {
     line-height: 20%;
 }
 
+/* for white background boxes */
 .top20 {
     background-color: #fff;
     border-radius: 12px;
     box-shadow: 0px 0px 10px;
 }
 
+/* for grey boxes with opacity */
 .welcome {
     background-color: rgba(255, 255, 255, 0.08);
     border: 1px solid rgba(255, 255, 255, 0.5);
@@ -38,11 +40,13 @@ h5 {
     height: 259px;
 }
 
+/* for rounded boxes without color  */
 .rend {
     border: 1px solid #ddd;
     border-radius: 12px;
 }
 
+/* to make content area in light blue  */
 .main {
     background-color: #D0EEFF;
 
@@ -52,6 +56,11 @@ input {
     background-color: #F5F8FA !important;
 }
 
+.bg-form-input {
+    background-color: #F5F8FA !important;
+}
+
+/* for pagination */
 .page-link.active {
     background-color: #F3F2F2 !important;
     border-radius: 50%;
