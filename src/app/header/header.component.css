@@ -9,14 +9,22 @@ p {
     font-size: 8px;
 }
 
-  .notification .badge {
-    position: relative;
-    top: 0px;
-    right: 0px;
-    border-radius: 50%;
+.notbadge {
     background: red;
     color: white;
-    font-size: 4px;
+    font-size: 5px;
+  }
+
+  .userbadge {
+    background: #66FD75;
+    border: 1px solid #ffff;
+    color: white;
+    font-size: 5px;
+  }
+
+  button {
+    border: none;
+    background-color: transparent;
   }
 
  
@@ -57,7 +65,7 @@ p {
     width: 20px;
     left: 4px;
     bottom: 4px;
-    background-image: url(../../assets/images/icons/Frame\ 73.png);;
+    background-image: url(../../assets/images/icons/Frame\ 73.png);
     -webkit-transition: .4s;
     transition: .4s;
   
@@ -95,3 +103,4 @@ input:checked + .slider:before {
 .dropdown-toggle::after {
     display: none;
   }
+  

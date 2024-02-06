@@ -1,66 +1,189 @@
-<div class=" container-fluid d-flex border-bottom p-2 mx-5 justify-content-between align-items-baseline">
-    <div class="d-flex align-items-baseline">
-        <h2>Mi Ingresos</h2>
-    </div>
-    <img src="../../assets/images/icons/info.png" width="25" height="25" class="m-3" title="More info..." alt="">
+<div class=" d-flex border-bottom p-2 mx-5 justify-content-between align-items-baseline">
+  <div class="d-flex align-items-baseline">
+    <h2>Mi Ingresos</h2>
+  </div>
+  <img src="../../assets/images/icons/info.png" width="25" height="25" class="m-3" title="More info..." alt="">
 </div>
 
 <div class="main container-fluid p-3">
-    <div class="top20 p-5 m-3 d-flex justify-content-center">
-        <img src="../../assets/images/ingresos.png" width="625" height="300" alt="">
-    </div>
+  <div class="top20 p-5 m-3 d-flex justify-content-center">
+    <img src="../../assets/images/ingresos.png" width="625" height="300" alt="">
+  </div>
 
-    <div class="top20  p-5 m-3 d-flex justify-content-center">
-          <!-- table  -->
+  <div class="top20  p-5 m-3 d-flex  flex-column justify-content-center">
+    <!-- table  -->
 
-      <!-- sorting data and buttons need API and some logic
+    <!-- sorting data and buttons need API and some logic
 angular material sorting is installed and ready to use -->
 
-      <div class=" d-flex justify-content-center">
-        <table class="table table-striped">
-          <tr style="background-color: #FDFDFD;">
-            <th>Consecutivo <i class="bi bi-arrow-down-up"></i></th>
-            <th>Semana <i class="bi bi-arrow-down-up"></i></th>
-            <th>Instalado<br>Personal <i class="bi bi-arrow-down-up"></i></th>
-            <th>Ingreso<br>Personal <i class="bi bi-arrow-down-up"></i></th>
-            <th>Ingreso<br>Hijos(8%) <i class="bi bi-arrow-down-up"></i></th>
-            <th>Ingreso<br>Nietos(12%) <i class="bi bi-arrow-down-up"></i></th>
-            <th>Ingreso<br>Bisnietos(20%) <i class="bi bi-arrow-down-up"></i></th>
-            <th>Comision<br>Total <i class="bi bi-arrow-down-up"></i></th>
-          </tr>
-          <tr>
-            <td>72.3</td>
-            <td>23/01/2024</td>
-            <td>MX350.00</td>
-            <td>24/01/2024</td>
-            <td>MX350.00</td>
-            <td></td>
-            <td></td>
-            <td><a>Estatus</a></td>
-          </tr>
-          <tr>
-            <td>72.3</td>
-            <td>23/01/2024</td>
-            <td>MX350.00</td>
-            <td>24/01/2024</td>
-            <td>MX350.00</td>
-            <td></td>
-            <td></td>
-            <td><a>Estatus</a></td>
-          </tr>
-          <tr>
-            <td>72.3</td>
-            <td>23/01/2024</td>
-            <td>MX350.00</td>
-            <td>24/01/2024</td>
-            <td>MX350.00</td>
-            <td></td>
-            <td></td>
-            <td><a>Estatus</a></td>
-          </tr>
+    <div class=" d-flex justify-content-center">
+      <table class="table table-striped">
+        <tr style="background-color: #FDFDFD;">
+          <th>Consecutivo <i class="bi bi-arrow-down-up"></i></th>
+          <th>Semana <i class="bi bi-arrow-down-up"></i></th>
+          <th>Instalado<br>Personal <i class="bi bi-arrow-down-up"></i></th>
+          <th>Ingreso<br>Personal <i class="bi bi-arrow-down-up"></i></th>
+          <th>Ingreso<br>Hijos(8%) <i class="bi bi-arrow-down-up"></i></th>
+          <th>Ingreso<br>Nietos(12%) <i class="bi bi-arrow-down-up"></i></th>
+          <th>Ingreso<br>Bisnietos(20%) <i class="bi bi-arrow-down-up"></i></th>
+          <th>Comision<br>Total <i class="bi bi-arrow-down-up"></i></th>
+        </tr>
+        <tr class="accordion" data-bs-toggle="collapse" href="#403718" (click)="toggleCollapse()">
+          <td class="justify-content-start d-flex align-items-center">
+            <span *ngIf="isCollapsed" class="me-2"><i class="bi bi-chevron-right"></i></span>
+            <span *ngIf="!isCollapsed" class="me-2"><i class="bi bi-chevron-down"></i></span>
+            72.3
+          </td>
+          <td>2024</td>
+          <td>$1140</td>
+          <td>$1140</td>
+          <td>$1140</td>
+          <td>$1140</td>
+          <td>$1140</td>
+          <td><a>Estatus</a></td>
+        </tr>
+        <tr>
+          <td class="p-0 border-0" colspan="8">
+            <div id="403718" class="collapse inner" data-bs-parent="#accordion">
+              <table class="table bg-white w-25">
+                <tr>
+                  <th>Contrado <i class="bi bi-arrow-down-up"></i></th>
+                  <th>Costo <i class="bi bi-arrow-down-up"></i></th>
+                </tr>
+                <tr>
+                  <td>38140176</td>
+                  <td>$510</td>
+                </tr>
+                <tr>
+                  <td>38140176</td>
+                  <td>$510</td>
+                </tr>
+              </table>
+            </div>
+          </td>
 
-        </table>
+        </tr>
+        <tr class="accordion" data-bs-toggle="collapse" href="#4037182" (click)="toggleCollapse()">
+          <td class="justify-content-start d-flex align-items-center">
+            <span *ngIf="isCollapsed" class="me-2"><i class="bi bi-chevron-right"></i></span>
+            <span *ngIf="!isCollapsed" class="me-2"><i class="bi bi-chevron-down"></i></span>
+            72.3
+          </td>
+          <td>2024</td>
+          <td>$1140</td>
+          <td>$1140</td>
+          <td>$1140</td>
+          <td>$1140</td>
+          <td>$1140</td>
+          <td><a>Estatus</a></td>
+        </tr>
+        <tr>
+          <td class="p-0 border-0" colspan="8">
+            <div id="4037182" class="collapse inner" data-bs-parent="#accordion">
+              <table class="table bg-white w-25">
+                <tr>
+                  <th>Contrado <i class="bi bi-arrow-down-up"></i></th>
+                  <th>Costo <i class="bi bi-arrow-down-up"></i></th>
+                </tr>
+                <tr>
+                  <td>38140176</td>
+                  <td>$510</td>
+                </tr>
+                <tr>
+                  <td>38140176</td>
+                  <td>$510</td>
+                </tr>
+              </table>
+            </div>
+          </td>
 
+        </tr>
+        <tr class="accordion" data-bs-toggle="collapse" href="#4037183" (click)="toggleCollapse()">
+          <td class="justify-content-start d-flex align-items-center">
+            <span *ngIf="isCollapsed" class="me-2"><i class="bi bi-chevron-right"></i></span>
+            <span *ngIf="!isCollapsed" class="me-2"><i class="bi bi-chevron-down"></i></span>
+            72.3
+          </td>
+          <td>2024</td>
+          <td>$1140</td>
+          <td>$1140</td>
+          <td>$1140</td>
+          <td>$1140</td>
+          <td>$1140</td>
+          <td><a>Estatus</a></td>
+        </tr>
+        <tr>
+          <td class="p-0 border-0" colspan="8">
+            <div id="4037183" class="collapse inner" data-bs-parent="#accordion">
+              <table class="table bg-white w-25">
+                <tr>
+                  <th>Contrado <i class="bi bi-arrow-down-up"></i></th>
+                  <th>Costo <i class="bi bi-arrow-down-up"></i></th>
+                </tr>
+                <tr>
+                  <td>38140176</td>
+                  <td>$510</td>
+                </tr>
+                <tr>
+                  <td>38140176</td>
+                  <td>$510</td>
+                </tr>
+              </table>
+            </div>
+          </td>
+
+        </tr>
+        <tr class="accordion" data-bs-toggle="collapse" href="#4037184" (click)="toggleCollapse()">
+          <td class="justify-content-start d-flex align-items-center">
+            <span *ngIf="isCollapsed" class="me-2"><i class="bi bi-chevron-right"></i></span>
+            <span *ngIf="!isCollapsed" class="me-2"><i class="bi bi-chevron-down"></i></span>
+            72.3
+          </td>
+          <td>2024</td>
+          <td>$1140</td>
+          <td>$1140</td>
+          <td>$1140</td>
+          <td>$1140</td>
+          <td>$1140</td>
+          <td><a>Estatus</a></td>
+        </tr>
+        <tr>
+          <td class="p-0 border-0" colspan="8">
+            <div id="4037184" class="collapse inner" data-bs-parent="#accordion">
+              <table class="table bg-white w-25">
+                <tr>
+                  <th>Contrado <i class="bi bi-arrow-down-up"></i></th>
+                  <th>Costo <i class="bi bi-arrow-down-up"></i></th>
+                </tr>
+                <tr>
+                  <td>38140176</td>
+                  <td>$510</td>
+                </tr>
+                <tr>
+                  <td>38140176</td>
+                  <td>$510</td>
+                </tr>
+              </table>
+            </div>
+          </td>
+
+        </tr>
+      </table>
 
     </div>
-</div>
+    <div class="d-flex justify-content-between align-items-center">
+      <button class="chartnav prev" type="button">
+        &#60;&#60; Previous</button>
+      <div>
+        <ul class="pagination">
+          <li class="page-item"><a class="page-link" href="#">&#60;&#60;</a></li>
+          <li class="page-item"><a class="page-link" href="#">&#60;</a></li>
+          <li class="page-item"><a class="page-link active" style="color: black;" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">></a></li>
+          <li class="page-item"><a class="page-link" href="#">>></a></li>
+        </ul>
+      </div>
+
+      <button class="chartnav next" type="button"> Next >> </button>
+    </div>
+  </div>

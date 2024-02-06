@@ -4,9 +4,19 @@ table {
     border-radius: 10px;
 }
 
+.inner table,
+.inner th,
+.inner td {
+    border: 1px solid #B1C9D6;
+    border-collapse: collapse;
+}
 
-th {
-    background-color: #F8FCFF;
+.inner {
+    background-color: #E7F3F9;
+}
+
+th , .inner th {
+    background-color: #E7F3F9;
     text-wrap: nowrap;
 }
 
@@ -18,7 +28,29 @@ td {
     font-size: 14px;
 }
 
-tr:nth-child(odd) {
+tr:nth-child(3n+1) {
     background-color: #fafafa;
 }
 
+.chartnav {
+    background-color: #33b5ff;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    padding-top: 0;
+    line-height: 1.7rem;
+}
+
+
+.next {
+    box-shadow: -5px 0px 2px #33b4ff7c;
+}
+
+.prev {
+    box-shadow: 5px 0px 2px #33b4ff7c;
+}
+
+.page-link {
+    border: none;
+    color: #849396;
+}

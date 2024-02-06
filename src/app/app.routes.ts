@@ -5,7 +5,7 @@ import { AgrigarHijosComponent } from './agrigar-hijos/agrigar-hijos.component';
 import { MiDiagramaComponent } from './mi-diagrama/mi-diagrama.component';
 import { MisPaginasComponent } from './mis-paginas/mis-paginas.component';
 import { MiIngresosComponent } from './mi-ingresos/mi-ingresos.component';
-
+import { MiComunidadComponent } from './mi-comunidad/mi-comunidad.component'
 export const routes: Routes = [
     { path: '', component: MiperfileComponent},
     { path: 'capturadeventa', component: CapturaDeVentaComponent },
@@ -13,4 +13,5 @@ export const routes: Routes = [
     { path: 'miDiagrama', component: MiDiagramaComponent },
     { path: 'misPaginas', component: MisPaginasComponent },
     { path: 'miIngresos', component: MiIngresosComponent },
+    {path : 'micomunidad', component: MiComunidadComponent}
 ];

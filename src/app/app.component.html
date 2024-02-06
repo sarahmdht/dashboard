@@ -1,2 +1,24 @@
+<div class="container-fluid ">
+    <div class="row">
+      <!-- Sidebar -->
+      <div class="col-3 p-0" [ngClass]="{'d-none': !isSidebarOpen}">
+        <!-- Sidebar content goes here -->
+        <app-sidebar></app-sidebar>
+      </div>
+      
+      <!-- Main Content -->
+      <div class="col-9 m-0 p-0">
+        <!-- Main content goes here -->
+        <div class="d-flex container-fluid">
+        <!-- <button class="btn ms-0 ps-0 me-2" (click)="toggleSidebar()"><img src=".././assets/images/icons/Frame 194.png"></button> -->
+        <app-header></app-header>
+        </div>
+        <router-outlet></router-outlet>
+        
+        <footer>
+            <p class="greytext align-content-center fs-6 p-2">Enterprise Standard | API: v11.2.0 | Client: v11.2.0 [20240116]</p>
+        </footer>
 
-<app-pokoa></app-pokoa>
+      </div>
+    </div>
+  </div>
