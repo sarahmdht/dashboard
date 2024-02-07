@@ -44,40 +44,117 @@
     </div>
 
     <!-- checklist button  -->
-    <div class="dropdown">
+    <div class="dropdown  d-flex align-items-center dropdown-toggle" data-bs-toggle="dropdown">
       <button class="app-navbar-item me-1">
-        <img src="../../assets/images/icons/Vector (4).png" height="18" width="18" />
+        <img src="../../assets/images/icons/Vector (4).png" height="19" width="19" />
       </button>
     </div>
 
+    <div class="dropdown-menu p-0">
+      <div style="background-color: #33b5ff;" class="d-flex justify-content-between align-items-center p-2">
+        <h4 class="text-white fw-bold ms-3 me-5 mb-0 text-center align-text-bottom">Checklist by Andrea Yamiliet</h4>
+        <button type="button" class="btn-close btn-close-white mx-3"></button>
+      </div>
+
+      <!-- checklist -->
+      
+    </div>
+
     <!-- calendar button  -->
-    <div class="dropdown">
+    <div class="dropdown  d-flex align-items-center dropdown-toggle" data-bs-toggle="dropdown">
       <button class="app-navbar-item me-1">
         <img src="../../assets/images/icons/calender.png" height="18" width="18" />
       </button>
     </div>
 
+    <div class="dropdown-menu p-0">
+      <div style="background-color: #33b5ff;" class="d-flex justify-content-between align-items-center p-2">
+        <h4 class="text-white fw-bold ms-3 me-5 mb-0 text-center align-text-bottom">Messages</h4>
+        <button type="button" class="btn-close btn-close-white mx-3"></button>
+      </div>
+    </div>
+
     <!-- whatsapp button  -->
     <div class="dropdown">
       <button class="app-navbar-item me-1">
-        <img src="../../assets/images/icons/whatsapp.png" height="18" width="18" />
+        <img src="../../assets/images/icons/whatsapp.png" height="20" width="20" />
       </button>
     </div>
 
     <!-- chat button  -->
     <div class="dropdown">
-      <button class="app-navbar-item me-1">
+      <button class="d-block  d-flex align-items-center dropdown-toggle" data-bs-toggle="dropdown">
         <img src="../../assets/images/icons/chat.png" height="18" width="18" />
       </button>
-      <div class="dropdown-menu">
-        lorem ipsum
+      <div class="dropdown-menu p-0">
+        <div style="background-color: #33b5ff;" class="d-flex justify-content-between align-items-center p-2">
+          <h4 class="text-white fw-bold ms-3 me-5 mb-0 text-center align-text-bottom">Messages</h4>
+          <button type="button" class="btn-close btn-close-white mx-3"></button>
+        </div>
+
+        <!-- Messages -->
+        <div class="d-flex justify-content-between align-items-center mt-3">
+          <form class="me-3">
+            <div class="input-group"  style="width: 10rem;">
+              <button class=" searchbox input-group-text bg-secondary-subtle ms-2" type="button" style="height: 2rem;"> <i class="bi bi-search"></i>
+              </button>
+              <input type="search" class="search form-control p-2 bg-secondary-subtle" style="height: 2rem;" placeholder="Search users">
+            </div>
+          </form>
+          <i class="bi bi-person-plus m-2"></i>
+          <i class="bi bi-sliders me-3"></i>
+        </div>
+        <h3 class="m-3">Chat</h3>
+        <div class="d-flex justify-content-between align-items-center px-3 mb-3">
+          <div class="d-flex">
+          <div>
+          <img src="../../assets/images/avatar/Ellipse 62.png" alt="" width="40" height="40">
+          <span class="badge rounded-circle offline me-1">.</span>
+          </div>
+          <div>
+            <h5 class="mb-0">Khramirezvaz</h5>
+            <p class="greytext me-4 mb-0">Offline</p>
+          </div>
+          </div>
+          <p> 12 hours</p>
+        </div>
+
+        <div class="d-flex justify-content-between align-items-center px-3 mb-3">
+          <div class="d-flex">
+          <div>
+          <img src="../../assets/images/avatar/Ellipse 61.png" alt="" width="40" height="40">
+          <span class="badge rounded-circle offline me-1">.</span>
+          </div>
+          <div>
+            <h5 class="mb-0">Bibana</h5>
+            <p class="greytext me-4 mb-0">Offline</p>
+          </div>
+          </div>
+          <p>Sat</p>
+        </div>
+
+        <div class="d-flex justify-content-between align-items-center px-3 mb-3">
+          <div class="d-flex">
+          <div>
+          <img src="../../assets/images/avatar/Ellipse 65.png" alt="" width="40" height="40">
+          <span class="badge rounded-circle userbadge me-1">.</span>
+          </div>
+        
+          <div>
+            <h5 class="mb-0">Carlos</h5>
+            <p class="text-success me-4 mb-0">Active</p>
+          </div>
+          </div>
+          <p>Fri</p>
+        </div>
+
       </div>
     </div>
 
     <!-- notification button  -->
     <div class="dropdown">
       <button class="d-block me-2 d-flex align-items-center dropdown-toggle" data-bs-toggle="dropdown">
-        <i class="bi bi-bell-fill fs-6"></i>
+        <i class="bi bi-bell-fill fs-5"></i>
         <span class="badge notbadge rounded-circle">1</span>
       </button>
       <div class="dropdown-menu p-0">
@@ -92,7 +169,7 @@
               <span class="slider round"></span>
             </label>
             <i class="bi bi-gear text-white me-2"></i>
-            <i class="bi bi-x text-white"></i>
+            <button type="button" class="btn-close btn-close-white"></button>
           </div>
         </div>
         <div class="bg-secondary-subtle p-2 d-flex justify-content-center">
@@ -150,10 +227,10 @@
             </div>
           </div>
         </div>
-      <!-- button  -->
-      <div class="d-flex justify-content-end m-3">
-      <button class="chartnav next" type="button"> View all notifiations </button>
-      </div>
+        <!-- button  -->
+        <div class="d-flex justify-content-end m-3">
+          <button class="chartnav next" type="button"> View all notifiations </button>
+        </div>
       </div>
     </div>
 

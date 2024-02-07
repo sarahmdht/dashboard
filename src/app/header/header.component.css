@@ -14,11 +14,15 @@ p {
     color: white;
     font-size: 5px;
   }
+  
 
   .userbadge {
     background: #66FD75;
-    border: 1px solid #ffff;
-    color: white;
+    font-size: 5px;
+  }
+
+  .offline {
+    background: gray;
     font-size: 5px;
   }
 
@@ -109,7 +113,7 @@ input:checked + .theme:before {
   }
   
   .bi {
-    color: #333;
+    color: #5e5d5d;
   }
 
   .chartnav {
@@ -125,3 +129,19 @@ input:checked + .theme:before {
 .next {
     box-shadow: 0px 0px 2px #33b4ff7c;
 }
+
+.searchbox {
+    background-color: rgba(255, 255, 255, 0.6);
+    border: none;
+    border-radius: 50px 0px 0px 50px;
+}
+.search{
+border-radius: 0px 50px 50px 0px;
+border: none;
+
+
+}
+
+.search::-webkit-input-placeholder { 
+    font-size: 14px;
+  }
