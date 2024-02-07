@@ -45,7 +45,7 @@ p {
 }
 
 /* The slider (round) */
-.slider {
+.theme {
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -58,7 +58,7 @@ p {
     border-radius: 34px;
 }
 
-.slider:before {
+.theme:before {
     position: absolute;
     content: "";
     height: 25px;
@@ -71,15 +71,19 @@ p {
   
 }
 
-input:checked + .slider {
+.theme::after {
+    background-image: url(../../assets/images/icons/moon.png);
+}
+
+input:checked + .theme {
     background-color: #DAE4EA;
 }
 
-input:focus + .slider {
+input:focus + .theme {
     box-shadow: 0 0 1px #DAE4EA;
 }
 
-input:checked + .slider:before {
+input:checked + .theme:before {
     -webkit-transform: translateX(20px);
     -ms-transform: translateX(20px);
     transform: translateX(20px);
@@ -104,3 +108,20 @@ input:checked + .slider:before {
     display: none;
   }
   
+  .bi {
+    color: #333;
+  }
+
+  .chartnav {
+    background-color: #33b5ff;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    padding-top: 0;
+    line-height: 1.7rem;
+    font-size: 12px;
+}
+
+.next {
+    box-shadow: 0px 0px 2px #33b4ff7c;
+}
