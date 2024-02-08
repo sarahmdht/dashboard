@@ -1,16 +1,16 @@
 <div class="container-fluid m-0 p-0">
   <div class="d-flex flex-column">
-    <div class="d-flex justify-content-start">
+    <div class="d-flex align-items-center">
       <!-- logo  -->
-      <div class="logo d-flex container-fluid align-items-center " style="width: 20%">
-        <img src="../../assets/images/logo/pakoalogo 1.png" alt="pakoa logo" width="125" height="50" class="me-3">
-        <img src="../../assets/images/logo/antorchaff 1.png" alt="logo icon" width="47" height="48">
-        <button class="btn ms-0 py-5 rounded-0 bg-white" style="height: 50px;" (click)="toggleSidebar()"><img
-            src=".././assets/images/icons/Frame 194.png"></button>
+      <img src="../../assets/images/logo/pakoalogo 1.png" alt="pakoa logo" width="170" height="70" class="ms-3" [ngClass]="{'collapse' : !isSidebarOpen}">
+      <div class="logo d-flex container-fluid align-items-center justify-content-start p-0" style="width: 8%">
+        <img src="../../assets/images/logo/antorchaff 1.png" alt="logo icon" width="60" height="55">
+        <button class="btn  bg-white" (click)="toggleSidebar()"><img
+            src=".././assets/images/icons/Frame 194.png" height="15px"></button>
       </div>
 
       <!-- header  -->
-      <app-header style="width: 80%"></app-header>
+      <app-header style="width: 80%" [ngClass]="{'w-100' : !isSidebarOpen}"></app-header>
     </div>
     <div class="d-flex m-0 p-0">
 

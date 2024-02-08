@@ -1,8 +1,27 @@
-p {
-    font-size: 8px;
+/* Typography  */
+@font-face {
+    font-family: "Satoshi";
+    src: url(assets/fonts/Satoshi_Complete/Fonts/OTF/Satoshi-Regular.otf) format("opentype");
+    font-weight: 400;
+  }
+
+  @font-face {
+    font-family: "Satoshi";
+    src: url(assets/fonts/Satoshi_Complete/Fonts/OTF/Satoshi-Light.otf) format("opentype");
+    font-weight: 300;
+  }
+
+  @font-face {
+    font-family: "Satoshi";
+    src: url(assets/fonts/Satoshi_Complete/Fonts/OTF/Satoshi-Bold.otf) format("opentype");
+    font-weight: 700;
+  }
+
+.fs-s {
+    font-size: 0.6rem;
 }
 
-h2 {
+/* h2 {
     font-size: 1.4rem;
 }
 
@@ -14,14 +33,18 @@ h4 {
 }
 h5 {
     font-size: 0.74rem;
-}
+} */
 
 .greytext {
     color: #849396;
 }
 
 .line {
-    line-height: 20%;
+    line-height: 70%;
+}
+
+.btn:focus {
+border: 0;
 }
 
 /* for white background boxes */
@@ -70,5 +93,33 @@ input {
 .bi {
     background-color: transparent !important;
 }
+
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: "Satoshi", sans-serif; }
+
+
+/* notification dots  */
+.notification-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+        transform: translate(50%, -50%);
+  }
+
+  .up {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    transform: translate(50%, -50%);
+  }
+
+  .down {
+    bottom:-2px;
+    right: 10px;
+  }
+
+  .badge {
+    color: white;
+    font-size: 3px;
+  }

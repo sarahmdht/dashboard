@@ -12,8 +12,15 @@ import { RouterLink } from '@angular/router';
 })
 export class HeaderComponent {
   isSidebarOpen: boolean = true;
+  isCollapsed = true;
 
+  // sidebar
   toggleSidebar(): void {
     this.isSidebarOpen = !this.isSidebarOpen;
+  }
+
+  // accordion
+  toggleCollapse() {
+    this.isCollapsed = !this.isCollapsed;
   }
 }

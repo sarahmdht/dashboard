@@ -1,30 +1,36 @@
 <div class=" d-flex justify-content-between p-3">
 
   <!-- left data  -->
-  <div class=" d-flex align-items-center col-6 me-4" style="font-size: 9px;">
+  <div class=" d-flex align-items-center col-6 me-4 ms-0" >
 
-    <div class="border-end pe-2">
-      <h6 class="text-center fw-bold mb-2">Communidad</h6>
-      <div style="color: red;" class="line text-nowrap">Perdida: MX0.00</div>
-      <div class="text-nowrap">Comision: MX 1,525.20</div>
+    <div class=" pe-2 ">
+      <h5 class="text-center fw-bold mb-2">Communidad</h5>
+      <div style="color: red;" class="line text-nowrap fs-s">Perdida: MX0.00</div>
+      <div class="text-nowrap fs-s">Comision: MX 1,525.20</div>
     </div>
 
-    <div class="border-end p-2">
-      <h6 class="text-center fw-bold mb-2">Instalado</h6>
-      <div class="line text-nowrap">30 Dias:MX33.140.00</div>
-      <div class="text-nowrap">En Semena: MX990.00</div>
+<div class="fading-border text-white m-2">.</div>
+    
+<div class="p-2">
+      <h5 class="text-center fw-bold mb-2">Instalado</h5>
+      <div class="line text-nowrap fs-s">30 Dias:MX33.140.00</div>
+      <div class="text-nowrap fs-s">En Semena: MX990.00</div>
     </div>
 
-    <div class="border-end p-2">
-      <h6 class="text-center fw-bold mb-2">Cancelado</h6>
-      <div style="color: red;" class="line text-nowrap">En Semana: MX0.00</div>
-      <div style="color: red;" class="text-nowrap">Semana Ant: MX480.00</div>
-    </div>
+    <div class="fading-border text-white m-2">.</div>
 
+    <div class=" p-2">
+      <h5 class="text-center fw-bold mb-2">Cancelado</h5>
+      <div style="color: red;" class="line text-nowrap fs-s">En Semana: MX0.00</div>
+      <div style="color: red;" class="text-nowrap fs-s">Semana Ant: MX480.00</div>
+    </div>
+    
+    <div class="fading-border text-white m-2">.</div>
+    
     <div class="p-2">
-      <h6 class="text-center fw-bold mb-2">Caidas</h6>
-      <div style="color: red;" class="line text-wrap">En Semana: 0</div>
-      <div style="color: red;" class="text-nowrap">Sem Anterior: 0</div>
+      <h5 class="text-center fw-bold mb-2">Caidas</h5>
+      <div style="color: red;" class="line text-wrap fs-s">En Semana: 0</div>
+      <div style="color: red;" class="text-nowrap fs-s">Sem Anterior: 0</div>
     </div>
 
     <div>
@@ -44,24 +50,90 @@
     </div>
 
     <!-- checklist button  -->
-    <div class="dropdown  d-flex align-items-center dropdown-toggle" data-bs-toggle="dropdown">
-      <button class="app-navbar-item me-1">
+    <div class="dropdown me-2">
+      <button class="d-block  d-flex align-items-center dropdown-toggle" data-bs-toggle="dropdown">
         <img src="../../assets/images/icons/Vector (4).png" height="19" width="19" />
       </button>
+      <div class="dropdown-menu p-0">
+        <div style="background-color: #33b5ff;" class="d-flex justify-content-between align-items-center p-2">
+          <h4 class="text-white fw-bold ms-3 me-5 mb-0 text-center align-text-bottom">Messages</h4>
+          <button type="button" class="btn-close btn-close-white mx-3"></button>
+        </div>
+      </div>
     </div>
 
-    <div class="dropdown-menu p-0">
-      <div style="background-color: #33b5ff;" class="d-flex justify-content-between align-items-center p-2">
+  <!-- dropdown end  -->
+  <!-- Messages -->
+
+
+    <!-- <div class="p-0" id="checklist">
+      <div style="background-color: #33b5ff;" class="d-flex justify-content-between align-items-center p-2"
+        data-bs-toggle="collapse" href="#personal">
         <h4 class="text-white fw-bold ms-3 me-5 mb-0 text-center align-text-bottom">Checklist by Andrea Yamiliet</h4>
-        <button type="button" class="btn-close btn-close-white mx-3"></button>
+        <button type="button" class="btn-close btn-close-white mx-3" (click)="toggleCollapse()"
+          data-bs-toggle="collapse" href="#checklist"></button>
       </div>
 
-      <!-- checklist -->
-      
-    </div>
+           <div class="dropdown">
+        <div class="card m-3" id="personal">
+          <div class="card-header name d-flex justify-content-between align-items-center accordion"
+            data-bs-toggle="collapse" href="#sale">
+            <a class="btn">
+              <span *ngIf="isCollapsed" class="me-2"><i class="bi bi-plus-circle-fill"
+                  style="color: #33b5ff;"></i></span>
+              <span *ngIf="!isCollapsed" class="me-2"><i class="bi bi-dash-circle-fill"
+                  style="color: #33b5ff;"></i></span>
+              Personal
+            </a>
+            <i class="bi bi-x-circle-fill text-danger"></i>
+          </div>
+
+          
+
+
+          <div id="sale">
+            <div class="card-body data p-0">
+              <div class="card-header data p-2 d-flex justify-content-between align-items-baseline accordion"
+                data-bs-toggle="collapse" href="#tasks">
+                <a class="btn">
+                  Sale 2
+                </a>
+                <div>
+                  <i class="bi bi-x-circle-fill text-danger me-2"></i>
+                </div>
+              </div>
+
+              <div class="card-body data p-0 m-2" id="tasks">
+                <div class="mx-2">
+                  <div class="d-flex justify-content-between mb-4">
+                    Sales under review (0)
+                    <i class="bi bi-x-circle-fill text-danger"></i>
+                  </div>
+                  <div class="d-flex justify-content-between mb-4">
+                    Confirm sales (0)
+                    <i class="bi bi-check-circle-fill text-success"></i>
+                  </div>
+                  <div class="d-flex justify-content-between mb-4">
+                    Not Done (0)
+                    <i class="bi bi-check-circle-fill text-success"></i>
+                  </div>
+                  <div class="d-flex justify-content-between mb-4">
+                    Canceled (1)
+                    <i class="bi bi-check-circle-fill text-success"></i>
+                  </div>
+                  <div class="d-flex justify-content-between mb-4">
+                    Canceled (1)
+                    <i class="bi bi-check-circle-fill text-success"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
 
     <!-- calendar button  -->
-    <div class="dropdown  d-flex align-items-center dropdown-toggle" data-bs-toggle="dropdown">
+    <div class="dropdown  d-flex align-items-center dropdown-toggle me-2" data-bs-toggle="dropdown">
       <button class="app-navbar-item me-1">
         <img src="../../assets/images/icons/calender.png" height="18" width="18" />
       </button>
@@ -75,14 +147,14 @@
     </div>
 
     <!-- whatsapp button  -->
-    <div class="dropdown">
+    <div class="dropdown me-2">
       <button class="app-navbar-item me-1">
         <img src="../../assets/images/icons/whatsapp.png" height="20" width="20" />
       </button>
     </div>
 
     <!-- chat button  -->
-    <div class="dropdown">
+    <div class="dropdown me-2">
       <button class="d-block  d-flex align-items-center dropdown-toggle" data-bs-toggle="dropdown">
         <img src="../../assets/images/icons/chat.png" height="18" width="18" />
       </button>
@@ -95,10 +167,12 @@
         <!-- Messages -->
         <div class="d-flex justify-content-between align-items-center mt-3">
           <form class="me-3">
-            <div class="input-group"  style="width: 10rem;">
-              <button class=" searchbox input-group-text bg-secondary-subtle ms-2" type="button" style="height: 2rem;"> <i class="bi bi-search"></i>
+            <div class="input-group" style="width: 10rem;">
+              <button class=" searchbox input-group-text bg-secondary-subtle ms-2" type="button" style="height: 2rem;">
+                <i class="bi bi-search"></i>
               </button>
-              <input type="search" class="search form-control p-2 bg-secondary-subtle" style="height: 2rem;" placeholder="Search users">
+              <input type="search" class="search form-control p-2 bg-secondary-subtle" style="height: 2rem;"
+                placeholder="Search users">
             </div>
           </form>
           <i class="bi bi-person-plus m-2"></i>
@@ -107,43 +181,43 @@
         <h3 class="m-3">Chat</h3>
         <div class="d-flex justify-content-between align-items-center px-3 mb-3">
           <div class="d-flex">
-          <div>
-          <img src="../../assets/images/avatar/Ellipse 62.png" alt="" width="40" height="40">
-          <span class="badge rounded-circle offline me-1">.</span>
-          </div>
-          <div>
-            <h5 class="mb-0">Khramirezvaz</h5>
-            <p class="greytext me-4 mb-0">Offline</p>
-          </div>
+            <div>
+              <img src="../../assets/images/avatar/Ellipse 62.png" alt="" width="40" height="40">
+              <span class="badge rounded-circle offline me-1">.</span>
+            </div>
+            <div>
+              <h5 class="mb-0">Khramirezvaz</h5>
+              <p class="greytext me-4 mb-0">Offline</p>
+            </div>
           </div>
           <p> 12 hours</p>
         </div>
 
         <div class="d-flex justify-content-between align-items-center px-3 mb-3">
           <div class="d-flex">
-          <div>
-          <img src="../../assets/images/avatar/Ellipse 61.png" alt="" width="40" height="40">
-          <span class="badge rounded-circle offline me-1">.</span>
-          </div>
-          <div>
-            <h5 class="mb-0">Bibana</h5>
-            <p class="greytext me-4 mb-0">Offline</p>
-          </div>
+            <div>
+              <img src="../../assets/images/avatar/Ellipse 61.png" alt="" width="40" height="40">
+              <span class="badge rounded-circle offline me-1">.</span>
+            </div>
+            <div>
+              <h5 class="mb-0">Bibana</h5>
+              <p class="greytext me-4 mb-0">Offline</p>
+            </div>
           </div>
           <p>Sat</p>
         </div>
 
         <div class="d-flex justify-content-between align-items-center px-3 mb-3">
           <div class="d-flex">
-          <div>
-          <img src="../../assets/images/avatar/Ellipse 65.png" alt="" width="40" height="40">
-          <span class="badge rounded-circle userbadge me-1">.</span>
-          </div>
-        
-          <div>
-            <h5 class="mb-0">Carlos</h5>
-            <p class="text-success me-4 mb-0">Active</p>
-          </div>
+            <div>
+              <img src="../../assets/images/avatar/Ellipse 65.png" alt="" width="40" height="40">
+              <span class="badge rounded-circle userbadge me-1">.</span>
+            </div>
+
+            <div>
+              <h5 class="mb-0">Carlos</h5>
+              <p class="text-success me-4 mb-0">Active</p>
+            </div>
           </div>
           <p>Fri</p>
         </div>
@@ -153,9 +227,9 @@
 
     <!-- notification button  -->
     <div class="dropdown">
-      <button class="d-block me-2 d-flex align-items-center dropdown-toggle" data-bs-toggle="dropdown">
+      <button class="d-block me-2 d-flex align-items-start dropdown-toggle position-relative" data-bs-toggle="dropdown">
         <i class="bi bi-bell-fill fs-5"></i>
-        <span class="badge notbadge rounded-circle">1</span>
+        <span class="rounded-circle px-1 up bg-danger badge">3</span>
       </button>
       <div class="dropdown-menu p-0">
         <div style="background-color: #33b5ff;" class="d-flex justify-content-between p-2 rounded-top-3">
@@ -166,6 +240,7 @@
           <div class="d-flex">
             <label class="switch me-2">
               <input type="checkbox">
+              
               <span class="slider round"></span>
             </label>
             <i class="bi bi-gear text-white me-2"></i>
@@ -238,9 +313,9 @@
     <div class="dropdown">
       <button type="button" class="but dropdown-toggle d-flex align-items-center pe-2 text-light-emphasis"
         data-bs-toggle="dropdown">
-        <div class="d-flex align-items-end">
-          <img class="rounded-circle" width="30" height="30" src="../../assets/images/avatar/Ellipse 1.png" alt="">
-          <span class="badge rounded-circle userbadge me-1">1</span>
+        <div class="d-flex align-items-end position-relative">
+          <img class="rounded-circle me-2" width="35" height="35" src="../../assets/images/avatar/Ellipse 1.png" alt="">
+          <span class="notification-dot down" style="background-color: #66FD75;"></span>
         </div>
         Andrea
         <a href="#"><i class="bi bi-chevron-down fs-5 text-black mx-2"></i></a>
