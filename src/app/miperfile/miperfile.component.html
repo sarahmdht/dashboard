@@ -1,13 +1,14 @@
 <!-- page title  -->
-<div class="d-flex border p-3 align-items-baseline bg-secondary">
+<div class="d-flex border p-3 align-items-baseline">
     <h2 class="fw-medium">Mi Perfile</h2>
     <h4 class="ms-3 title fw-light greytext">Administracion de perfile</h4>
 </div>
 <div class="main p-3">
-    <!-- first section  -->
+    <!-- first section welcome + bars -->
     <div class="div1 p-5 mb-2">
         <div class="d-flex justify-content-between mb-3">
-            <!-- left section  -->
+
+            <!-- left  welcome section  -->
             <div class="welcome align-items-center p-3">
                 <div class="d-flex justify-content-between">
                     <div class="me-3">
@@ -20,10 +21,10 @@
                         </div>
                     </div>
                     <div>
-                        <h5 class="green">WELCOME!</h5>
-                        <h5 class="fw-bold text-white">ANDREA YAMILET RANGEL
-                            QUIROZ</h5>
-                        <h5 class="text-white fw-light">Meta Manager</h5>
+                        <h3 class="green m-0">WELCOME!</h3>
+                        <h4 class="fw-bold text-white m-0">ANDREA YAMILET RANGEL
+                            QUIROZ</h4>
+                        <h3 class="text-white fw-light line mb-4">Meta Manager</h3>
                     </div>
                     <div>
                         <button class="dots" type="button">...</button>
@@ -31,8 +32,8 @@
                 </div>
                 <div class="d-flex justify-content-between mb-3">
                     <div class="cards align-items-center p-2">
-                        <img class="card-img-top p-2" src="../../assets/images/weapons/QuetzalIniciatico64px 1.png"
-                            width="71" height="75" alt="Card image">
+                        <img class="card-img-top p-2" src="../../assets/images/weapons/CoronaPrincipe100 2.png"
+                            width="99" height="99" alt="Card image">
                     </div>
                     <div class="cards">
                         <img src="../../assets/images/weapons/CoronaPrincipe100 2.png" width="99" height="99"
@@ -45,7 +46,8 @@
 
                 </div>
             </div>
-            <!-- right section  -->
+
+            <!-- right bar section, angular highcharts is installed and ready to use  -->
             <div class="welcome p-3">
                 <div class="d-flex justify-content-end mb-2">
                     <button class="dots" type="button">...</button>
@@ -85,7 +87,9 @@
             </div>
         </div>
 
-        <h6 class="text-white fw-bold">Mis trofeos</h6>
+        <!-- mis trofeos cards -->
+        <h3 class="text-white">Mis trofeos</h3>
+        <!-- row 1  -->
         <div class="d-flex justify-content-between mb-3">
             <div class="card align-items-center p-2">
                 <img class="card-img-top p-2" src="../../assets/images/weapons/QuetzalIniciatico64px 1.png" width="71"
@@ -129,6 +133,7 @@
             </div>
 
         </div>
+        <!-- row 2 -->
         <div class="d-flex justify-content-between">
             <div class="card align-items-center p-2">
                 <img class="card-img-top p-2" src="../../assets/images/weapons/DagaAncestral 1.png" width="71"
@@ -174,16 +179,17 @@
         </div>
     </div>
 
-    <!-- top 20 slider  -->
+    <!-- top 20 slider using bxslider -->
     <div class="p-3">
         <div class="d-flex justify-content-between">
             <div>
-                <h4>Top 20 MetaManagers</h4>
+                <h3>Top 20 MetaManagers</h3>
                 <p class="fs-6 greytext">Instalado 30 dias</p>
             </div>
             <div class="d-flex align-items-center mb-3">
                 <a href="#" class="text-decoration-none">See All</a>
-                <img src="../../assets/images/icons/info.png" width="25" height="25" class="ms-3" title="More info..." alt="">
+                <img src="../../assets/images/icons/info.png" width="25" height="25" class="ms-3" title="More info..."
+                    alt="">
             </div>
         </div>
         <div class="top20 d-flex justify-content-center align-items-center p-3">
@@ -191,7 +197,7 @@
         </div>
     </div>
 
-    <!-- bar chart section  -->
+    <!-- bar chart section, angular highcharts used to test it  -->
     <div class="p-3">
         <div class="d-flex justify-content-between">
             <div>
@@ -199,7 +205,7 @@
                 <p class="fs-6 greytext">Instalado 30 dias</p>
             </div>
             <div>
-                <form >
+                <form>
                     <div class="input-group">
                         <span class="input-group-text text-bg-light"><i class="bi bi-calendar-minus"></i></span>
                         <select class="form-select bg-white">
@@ -220,7 +226,7 @@
             <div class="d-flex justify-content-between">
                 <button class="chartnav prev" type="button">
                     &#60;&#60; Previous</button>
-                        <button class="chartnav next" type="button"> Next >> </button>
+                <button class="chartnav next" type="button"> Next >> </button>
             </div>
         </div>
     </div>
@@ -229,7 +235,7 @@
     <div class="p-3">
         <div class="d-flex justify-content-between">
             <div>
-                <h4>Mi Progreso</h4>
+                <h3>Mi Progreso</h3>
                 <p class="fs-6 greytext">Instalado 30 dias</p>
             </div>
             <div>
@@ -250,6 +256,7 @@
         <div class="top20 p-2">
 
             <div class="d-flex justify-content-between">
+                <!-- row1 -->
                 <div class="d-flex rend p-2 m-1">
                     <div class="me-1 d-block m-auto">
                         <img src="../../assets/images/weapons/My progress 1.png" width="65" height="80" alt="">
@@ -299,8 +306,7 @@
                 </div>
             </div>
 
-
-
+            <!-- row2  -->
             <div class="d-flex justify-content-between">
                 <div class="d-flex rend p-2 m-1" style="background-color: #F8FCFF;">
                     <div class="me-1 d-block m-auto">
@@ -378,7 +384,8 @@
                 <div class="m-2 p-2 d-flex">
                     <img src="../../assets/images/circle graph.png" width="121" height="121" class="me-3" alt="">
                     <div>
-                        <p><span class="circlebadge  rounded-circle me-3" style="background-color: #33b5ff; color: #33b5ff;">
+                        <p><span class="circlebadge  rounded-circle me-3"
+                                style="background-color: #33b5ff; color: #33b5ff;">
                                 ....</span> Instaldo ultimos 30 Dias</p>
                         <p class="h6"><span class="circlebadge me-3" style="background-color: #fff;"> </span>
                             MX30,750,00</p>
@@ -432,7 +439,7 @@
 
                 </table>
                 <div class="col-7 rend">
-                <app-instalado-chart></app-instalado-chart>
+                    <app-instalado-chart></app-instalado-chart>
                 </div>
             </div>
         </div>

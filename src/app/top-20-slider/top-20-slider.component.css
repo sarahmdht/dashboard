@@ -2,8 +2,26 @@
     background-color: #009EF7;
     padding: 5px;
     position: absolute;
-    bottom: 100px;
-    right: 45px;
+    bottom: 104px;
+    right: 70px;
     color: white;
     font-size: 10px;
+}
+
+.bx-wrapper {
+    -moz-box-shadow: 0 !important;
+    -webkit-box-shadow: 0 !important;
+    box-shadow: 0 !important;
+    border: 0 !important;
+    background: #fff !important;
+}
+
+.bx-wrapper .bx-prev {
+    left: 10px;
+    background: url(../../assets/images/icons/pev.png) no-repeat 0 -32px;
+}
+
+.bx-wrapper .bx-next {
+    right: 10px;
+    background: url(../../assets/images/icons/next.png) no-repeat -43px -32px;
 }

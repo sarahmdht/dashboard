@@ -28,7 +28,7 @@ body { margin: 0; font-family: "Satoshi", sans-serif; }
 
 /* colors */
 /* light theme */
-:root {
+:host {
     --bs-primary: #33b5ff;
     --bs-secondary: #196191;
     --background-color: #ffffff;
@@ -37,7 +37,7 @@ body { margin: 0; font-family: "Satoshi", sans-serif; }
   }
   
   /* Dark Theme */
-  :root.dark {
+  :host.dark {
     --bs-primary: #33b5ff;
     --bs-secondary: #2E3341;
     --background-color: #2E3443;

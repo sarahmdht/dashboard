@@ -16,10 +16,10 @@ export class Top20SliderComponent {
     $(document).ready(function () {
       const slider = ($('#top20') as any).bxSlider({
         infiniteloop: true,
-        slideWidth: 110,
+        slideWidth: 150,
       minSlides: 2,
       maxSlides: 6,
-      slideMargin: 40,
+      slideMargin: 10,
         });
     });
   }
