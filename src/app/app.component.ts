@@ -4,6 +4,7 @@ import { RouterOutlet } from '@angular/router';
 import { RouterLink } from '@angular/router';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { HeaderComponent } from './header/header.component';
+import { ThemeServicesService } from './services/theme-services.service';
 
 @Component({
   selector: 'app-root',
@@ -19,4 +20,11 @@ export class AppComponent {
   toggleSidebar(): void {
     this.isSidebarOpen = !this.isSidebarOpen;
   }
+
+  constructor(private themeService: ThemeServicesService) {}
+
+  // ngOnInit(): void {
+  //   // Initialize theme
+  //   this.themeService.initializeTheme();
+  // }
 }

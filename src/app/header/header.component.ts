@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
-
+import { ThemeServicesService } from '../services/theme-services.service';
 
 @Component({
   selector: 'app-header',
@@ -13,6 +13,13 @@ import { RouterLink } from '@angular/router';
 export class HeaderComponent {
   isSidebarOpen: boolean = true;
   isCollapsed = true;
+
+  // light/dark modes
+  constructor(private themeService: ThemeServicesService) {}
+
+  toggleTheme(): void {
+    this.themeService.toggleTheme();
+  }
 
   // sidebar
   toggleSidebar(): void {

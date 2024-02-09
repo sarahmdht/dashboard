@@ -1,24 +1,52 @@
 /* Typography  */
+/* font  */
 @font-face {
     font-family: "Satoshi";
     src: url(assets/fonts/Satoshi_Complete/Fonts/OTF/Satoshi-Regular.otf) format("opentype");
     font-weight: 400;
   }
-
+  
   @font-face {
     font-family: "Satoshi";
     src: url(assets/fonts/Satoshi_Complete/Fonts/OTF/Satoshi-Light.otf) format("opentype");
     font-weight: 300;
-  }
+}
 
   @font-face {
-    font-family: "Satoshi";
-    src: url(assets/fonts/Satoshi_Complete/Fonts/OTF/Satoshi-Bold.otf) format("opentype");
+      font-family: "Satoshi";
+      src: url(assets/fonts/Satoshi_Complete/Fonts/OTF/Satoshi-Bold.otf) format("opentype");
     font-weight: 700;
-  }
+}
+
+html, body { height: 100%; }
+
+body { margin: 0; font-family: "Satoshi", sans-serif; }
 
 .fs-s {
     font-size: 0.6rem;
+}
+
+/* colors */
+/* light theme */
+:root {
+    --bs-primary: #33b5ff;
+    --bs-secondary: #196191;
+    --background-color: #ffffff;
+    --info-color: #D0EEFF;
+    --text-color: #000000;
+  }
+  
+  /* Dark Theme */
+  :root.dark {
+    --bs-primary: #33b5ff;
+    --bs-secondary: #2E3341;
+    --background-color: #2E3443;
+    --info-color: #2E3443;
+    --text-color: #ffffff;
+  }
+  
+.bg-secondary{
+    background-color: var(--bs-secondary) !important;
 }
 
 /* h2 {
@@ -94,8 +122,6 @@ input {
     background-color: transparent !important;
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: "Satoshi", sans-serif; }
 
 
 /* notification dots  */
