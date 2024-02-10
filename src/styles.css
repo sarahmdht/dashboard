@@ -27,41 +27,48 @@ body { margin: 0; font-family: "Satoshi", sans-serif; }
 }
 
 /* colors */
-/* light theme */
-:host {
-    --bs-primary: #33b5ff;
-    --bs-secondary: #196191;
-    --background-color: #ffffff;
-    --info-color: #D0EEFF;
-    --text-color: #000000;
-  }
+
   
   /* Dark Theme */
-  :host.dark {
-    --bs-primary: #33b5ff;
-    --bs-secondary: #2E3341;
-    --background-color: #2E3443;
-    --info-color: #2E3443;
-    --text-color: #ffffff;
+  .dark-mode {
+    background-color: #2E3443;
+    color: #fff;
+  }
+
+  
+  .light-mode {
+    background-color: #fff;
+    color: #333;
+  }
+
+  /* to make content area in light blue  */
+  .main  {
+      background-color: #D0EEFF;
+  
   }
   
-.bg-secondary{
-    background-color: var(--bs-secondary) !important;
-}
+  .darkmain {
+      background-color: #1A202D;
+  }
 
-/* h2 {
-    font-size: 1.4rem;
-}
+  /* for white background boxes */
+  .top20 {
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0px 0px 10px;
+  }
 
-h3 {
-    font-size: 1rem;
-}
-h4 {
-    font-size: 0.87rem;
-}
-h5 {
-    font-size: 0.74rem;
-} */
+  .darktop20 {
+    background-color: #171C26;
+  }
+
+  .progreso {
+background-color: #F8FCFF;
+  }
+
+  .darkprogreso {
+    background-color: #242B39;
+  }
 
 .greytext {
     color: #6b787a;
@@ -75,12 +82,6 @@ h5 {
 border: 0;
 }
 
-/* for white background boxes */
-.top20 {
-    background-color: #fff;
-    border-radius: 12px;
-    box-shadow: 0px 0px 10px;
-}
 
 /* for grey boxes with opacity */
 .welcome {
@@ -97,11 +98,6 @@ border: 0;
     border-radius: 12px;
 }
 
-/* to make content area in light blue  */
-.main {
-    background-color: #D0EEFF;
-
-}
 
 input {
     background-color: #F5F8FA !important;

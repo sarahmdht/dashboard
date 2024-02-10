@@ -16,15 +16,18 @@ import { ThemeServicesService } from './services/theme-services.service';
 export class AppComponent {
   title = 'pakoa';
   isSidebarOpen: boolean = true;
+  darkMode = false;
 
   toggleSidebar(): void {
     this.isSidebarOpen = !this.isSidebarOpen;
   }
 
+
   constructor(private themeService: ThemeServicesService) {}
 
-  // ngOnInit(): void {
-  //   // Initialize theme
-  //   this.themeService.initializeTheme();
-  // }
+  ngOnInit(): void {
+    this.themeService.darkMode$.subscribe(darkMode => {
+      this.darkMode = darkMode;
+    });
+}
 }

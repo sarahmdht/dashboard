@@ -2,11 +2,12 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { ThemeServicesService } from '../services/theme-services.service';
+import { CalendarComponent } from '../calendar/calendar.component';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [CommonModule, RouterLink],
+  imports: [CommonModule, RouterLink, CalendarComponent],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
@@ -17,8 +18,10 @@ export class HeaderComponent {
   // light/dark modes
   constructor(private themeService: ThemeServicesService) {}
 
-  toggleTheme(): void {
-    this.themeService.toggleTheme();
+
+
+  toggleDarkMode(): void {
+    this.themeService.toggleDarkMode();
   }
 
   // sidebar
@@ -31,5 +34,6 @@ export class HeaderComponent {
     this.isCollapsed = !this.isCollapsed;
   }
 
+  
   
 }

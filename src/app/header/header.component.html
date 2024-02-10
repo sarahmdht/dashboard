@@ -43,8 +43,8 @@
   <div class="d-flex justify-content-end align-items-center">
     <!-- theme toggle  -->
     <div class="app-navbar-item me-3">
-      <label class="switch" (click)="toggleTheme()">
-        <input type="checkbox">
+      <label class="switch">
+        <input type="checkbox" (click)="toggleDarkMode()">
         <span class="theme slider round"></span>
       </label>
     </div>
@@ -280,7 +280,8 @@
         </div>
 
         <!-- calendar start  -->
-        <div class="main">
+        <div class="main p-5">
+          <app-calendar></app-calendar>
         </div>
       </div>
     </div>

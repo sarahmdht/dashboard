@@ -83,7 +83,7 @@ td {
 
 
 tr:nth-child(even) {
-    background-color: #F8FCFF;
+    background-color: rgba(248,252,255,0.2);
 }
 
 .chartnav {

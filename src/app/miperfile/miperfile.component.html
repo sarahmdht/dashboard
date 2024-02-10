@@ -3,7 +3,7 @@
     <h2 class="fw-medium">Mi Perfile</h2>
     <h4 class="ms-3 title fw-light greytext">Administracion de perfile</h4>
 </div>
-<div class="main p-3">
+<div class="main p-3" [ngClass]="{'darkmain': darkMode}">
     <!-- first section welcome + bars -->
     <div class="div1 p-5 mb-2">
         <div class="d-flex justify-content-between mb-3">
@@ -192,7 +192,7 @@
                     alt="">
             </div>
         </div>
-        <div class="top20 d-flex justify-content-center align-items-center p-3">
+        <div class="top20 d-flex justify-content-center align-items-center p-3" [ngClass]="{'darktop20': darkMode}">
             <app-top-20-slider></app-top-20-slider>
         </div>
     </div>
@@ -219,7 +219,7 @@
             </div>
         </div>
 
-        <div class="top20 p-3">
+        <div class="top20 p-3" [ngClass]="{'darktop20': darkMode}">
             <div class="d-flex justify-content-center align-items-center chart1 my-5">
                 <app-bar-chart></app-bar-chart>
             </div>
@@ -253,7 +253,7 @@
             </div>
         </div>
 
-        <div class="top20 p-2">
+        <div class="top20 p-2" [ngClass]="{'darktop20': darkMode}">
 
             <div class="d-flex justify-content-between">
                 <!-- row1 -->
@@ -272,7 +272,7 @@
                         <p class="fs-6 greytext">Semana: 1</p>
                     </div>
                 </div>
-                <div class="d-flex rend p-2 m-1" style="background-color: #F8FCFF;">
+                <div class="d-flex rend p-2 m-1 progreso" [ngClass]="{'darkprogreso': darkMode}">
                     <div class="me-1 d-block m-auto">
                         <img src="../../assets/images/weapons/Piramide-Consecutivos 1.png" width="65" height="80"
                             alt="">
@@ -308,7 +308,7 @@
 
             <!-- row2  -->
             <div class="d-flex justify-content-between">
-                <div class="d-flex rend p-2 m-1" style="background-color: #F8FCFF;">
+                <div class="d-flex rend p-2 m-1 progreso" [ngClass]="{'darkprogreso': darkMode}">
                     <div class="me-1 d-block m-auto">
                         <img src="../../assets/images/weapons/HijosFull 1.png" width="65" height="80" alt="">
                     </div>
@@ -338,7 +338,7 @@
                         <p class="fs-6 greytext">Semana: 1</p>
                     </div>
                 </div>
-                <div class="d-flex rend p-2 m-1" style="background-color: #F8FCFF;">
+                <div class="d-flex rend p-2 m-1 progreso" [ngClass]="{'darkprogreso': darkMode}">
                     <div class="me-1 d-block m-auto">
                         <img src="../../assets/images/weapons/BisNietosFull 1.png" width="65" height="80" alt="">
                     </div>
@@ -362,17 +362,17 @@
     <!-- mi rendimento  -->
     <div class="p-3">
         <h4>Mi Rendimento</h4>
-        <div class="top20 p-3">
+        <div class="top20 p-3" [ngClass]="{'darktop20': darkMode}">
             <!-- top section  -->
             <div class="d-flex">
                 <!-- table  -->
                 <table class=" table m-2 p-2">
-                    <tr class="s" style="background-color: #FDFDFD;">
+                    <tr class="s progreso" [ngClass]="{'darkprogreso': darkMode}">
                         <th style="width:30%">Ano OC</th>
                         <th style="width:30%">Fecha Incio</th>
                         <th style="width:30%">Agente</th>
                     </tr>
-                    <tr class="s" style="background-color: white">
+                    <tr class="s" style="background-color: transparent">
                         <td>2024</td>
                         <td>Ultimate 30 Dias</td>
                         <td>ANDREA YAMILIET
@@ -399,7 +399,7 @@
 
             <div class="m-2 p-2 d-flex justify-content-between">
                 <table class="table p-2 flex-grow-1 m-2">
-                    <tr style="background-color: #FDFDFD;">
+                    <tr style="background-color: transparent">
                         <th style="width:80%">Fecha de Inicio</th>
                         <th style="width:20%">40 Dias</th>
                     </tr>
@@ -482,7 +482,7 @@
             </div>
         </div>
 
-        <div class="top20  d-flex justify-content-center align-items-center p-3">
+        <div class="top20  d-flex justify-content-center align-items-center p-3" [ngClass]="{'darktop20': darkMode}">
             <div class="col-6 p-3">
                 <div class="d-flex mb-2">
                     <div class="b1 me-2 p-3 col-6">
