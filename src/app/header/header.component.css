@@ -19,7 +19,6 @@ p {
     background-color: transparent;
   }
 
- 
 
    /* The switch - the container */
    .switch {
@@ -149,4 +148,8 @@ border: none;
     background-image: linear-gradient(to bottom, transparent,grey, transparent);
     background-repeat: no-repeat;
     background-size: 100% 100%;
+}
+
+.data:nth-child(even) {
+    background-color: #fafafa;
 }

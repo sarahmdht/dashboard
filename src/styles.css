@@ -64,7 +64,7 @@ h5 {
 } */
 
 .greytext {
-    color: #849396;
+    color: #6b787a;
 }
 
 .line {
@@ -147,5 +147,5 @@ input {
 
   .badge {
     color: white;
-    font-size: 3px;
+    font-size: 12px;
   }

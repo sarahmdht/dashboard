@@ -30,4 +30,6 @@ export class HeaderComponent {
   toggleCollapse() {
     this.isCollapsed = !this.isCollapsed;
   }
+
+  
 }
