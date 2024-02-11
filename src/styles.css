@@ -1,3 +1,5 @@
+
+
 /* Typography  */
 /* font  */
 @font-face {
@@ -74,6 +76,38 @@ background-color: #F8FCFF;
     color: #6b787a;
 }
 
+.tablehead {
+    background-color: #F3FBFF !important;
+}
+
+.darktable {
+background-color: #242B39 !important;
+}
+
+/* .bg-form-input {
+  background-color: #F5F8FA !important;
+}
+
+.darkbg-form {
+  background-color: #242B39 !important;
+} */
+
+select, input {
+  background-color: #F1F7FB;
+  border: 1px solid #D1DCE1;
+}
+
+
+
+::ng-deep .dark-mode input, ::ng-deep .dark-mode select, ::ng-deep .dark-mode .form-control {
+  color: #fff;
+  background-color: #242B39;
+}
+
+a {
+    background-color: transparent;
+}
+
 .line {
     line-height: 70%;
 }
@@ -99,13 +133,7 @@ border: 0;
 }
 
 
-input {
-    background-color: #F5F8FA !important;
-}
 
-.bg-form-input {
-    background-color: #F5F8FA !important;
-}
 
 /* for pagination */
 .page-link.active {

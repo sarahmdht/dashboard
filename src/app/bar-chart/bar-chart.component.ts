@@ -18,6 +18,7 @@ export class BarChartComponent {
     this.chart = new Chart({
       chart: {
         type: 'column',
+        backgroundColor: 'transparent'
       },
       plotOptions: {
         column: {

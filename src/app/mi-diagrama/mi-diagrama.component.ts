@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ThemeServicesService } from '../services/theme-services.service';
 
 @Component({
   selector: 'app-mi-diagrama',
@@ -8,5 +9,13 @@ import { Component } from '@angular/core';
   styleUrl: './mi-diagrama.component.css'
 })
 export class MiDiagramaComponent {
+  darkMode = false;
 
+  constructor(private themeService: ThemeServicesService) {}
+
+  ngOnInit(): void {
+    this.themeService.darkMode$.subscribe(darkMode => {
+      this.darkMode = darkMode;
+    });
+}
 }

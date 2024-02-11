@@ -4,7 +4,7 @@
       <img src="../../assets/images/logo/pakoalogo 1.png" alt="pakoa logo" width="170" height="70" class="ms-3" [ngClass]="{'collapse' : !isSidebarOpen}">
       <div class="logo d-flex container-fluid align-items-center justify-content-start p-0" style="width: 7%">
         <img src="../../assets/images/logo/antorchaff 1.png" alt="logo icon" width="60" height="55">
-        <button class="btn  bg-white" (click)="toggleSidebar()"><img
+        <button class="btn" (click)="toggleSidebar()"><img
             src=".././assets/images/icons/Frame 194.png" height="15px"></button>
       </div>
 
@@ -13,6 +13,7 @@
     </div>
     <div class="d-flex m-0 p-0">
 
+      
       <!-- Sidebar -->
       <div class="bar"  [ngClass]="{'collapse' : !isSidebarOpen}" style="width: 20%; height: auto">
         <app-sidebar></app-sidebar>

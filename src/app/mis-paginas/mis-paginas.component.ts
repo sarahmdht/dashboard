@@ -1,5 +1,6 @@
 import { Component, input } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ThemeServicesService } from '../services/theme-services.service';
 
 @Component({
   selector: 'app-mis-paginas',
@@ -9,11 +10,18 @@ import { CommonModule } from '@angular/common';
   styleUrl: './mis-paginas.component.css'
 })
 export class MisPaginasComponent {
-  constructor(){
-  
-  }
+ 
   isCollapsed = true;
-
+  darkMode = false;
+ 
+  constructor(private themeService: ThemeServicesService) {}
+  
+  ngOnInit(): void {
+    this.themeService.darkMode$.subscribe(darkMode => {
+      this.darkMode = darkMode;
+    });
+  }
+ 
   toggleCollapse() {
     this.isCollapsed = !this.isCollapsed;
   }

@@ -4,6 +4,7 @@ import { RouterLink } from '@angular/router';
 import { ThemeServicesService } from '../services/theme-services.service';
 import { CalendarComponent } from '../calendar/calendar.component';
 
+
 @Component({
   selector: 'app-header',
   standalone: true,
@@ -14,6 +15,7 @@ import { CalendarComponent } from '../calendar/calendar.component';
 export class HeaderComponent {
   isSidebarOpen: boolean = true;
   isCollapsed = true;
+  darkMode = false;
 
   // light/dark modes
   constructor(private themeService: ThemeServicesService) {}
@@ -23,6 +25,14 @@ export class HeaderComponent {
   toggleDarkMode(): void {
     this.themeService.toggleDarkMode();
   }
+
+ 
+
+  ngOnInit(): void {
+    this.themeService.darkMode$.subscribe(darkMode => {
+      this.darkMode = darkMode;
+    });
+}
 
   // sidebar
   toggleSidebar(): void {

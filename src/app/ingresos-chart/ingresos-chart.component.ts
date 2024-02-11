@@ -17,6 +17,7 @@ export class IngresosChartComponent {
     this.chart = new Chart({
       chart: {
         type: 'areaspline',
+        backgroundColor: 'transparent'
       },
       title: {
         text: '',

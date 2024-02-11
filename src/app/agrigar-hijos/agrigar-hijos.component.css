@@ -33,7 +33,6 @@ table {
 
 
 th {
-    background-color: #F8FCFF;
     text-wrap: nowrap;
     font-size: 14px;
 }
@@ -46,7 +45,7 @@ td {
 }
 
 tr:nth-child(odd) {
-    background-color: #fafafa;
+    background-color: rgba(248,252,255, 0.2);
 }
 
 .chartnav {
@@ -68,4 +67,12 @@ tr:nth-child(odd) {
 .page-link {
     border: none;
     color: #849396;
+}
+
+.pagination {
+    --bs-pagination-bg: rgba(255,255,255,0.2);
+}
+
+a {
+    background-color: transparent;
 }

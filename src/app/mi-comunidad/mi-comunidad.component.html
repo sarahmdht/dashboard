@@ -1,13 +1,13 @@
-<div class="d-flex p-2 mx-5 justify-content-between align-items-center">
-    <div class="mt-3">
+<div class="d-flex p-3 justify-content-between align-items-center">
+    <div class="">
         <h2>Mi Comunidad</h2>
     </div>
     <img src="../../assets/images/icons/info.png" width="25" height="25" class="m-3" title="More info..." alt="">
 </div>
 
 <!-- content  -->
-<div class="main container-fluid p-3">
-    <div class="top20 p-5 m-3">
+<div class="main container-fluid p-3" [ngClass]="{'darkmain': darkMode}">
+    <div class="top20 p-5 m-3" [ngClass]="{'darktop20': darkMode}">
         
         <!-- numbers  -->
         <div class="d-flex justify-content-between mx-3">
@@ -32,7 +32,7 @@
         <div class="d-flex align-items-end justify-content-between">
             <div>
                 <label for="metamanager" class="form-label fw-medium">Metamanager </label>
-                <select id="metamanager" class="form-select bg-form-input mx-2 shad">
+                <select id="metamanager" class="form-select bg-form-input mx-2 shad" [ngClass]="{'dark-mode': darkMode}">
                     <option>Andrea Yamilet Rangel Quiroz</option>
                     <option>Andrea Yamilet Rangel Quiroz</option>
                     <option>Andrea Yamilet Rangel Quiroz</option>
@@ -43,7 +43,7 @@
                 <form class="d-flex">
                     <div class="input-group shad">
                         <span class="input-group-text text-bg-light"><i class="bi bi-calendar-minus"></i></span>
-                        <select class="form-select bg-white">
+                        <select class="form-select" [ngClass]="{'dark-mode': darkMode}" name="commdate">
                             <option></option>
                             <option>1/23/24</option>
                             <option>1/24/24</option>
@@ -51,17 +51,17 @@
                     </div>
                     <div class="input-group shad">
                         <span class="input-group-text text-bg-light"><i class="bi bi-calendar-minus"></i></span>
-                        <select class="form-select bg-white">
+                        <select class="form-select" [ngClass]="{'dark-mode': darkMode}" name="commsemana">
                             <option>Semana 4</option>
                             <option>Semana 3</option>
-                            <option>Seman 1</option>
+                            <option>Semana 1</option>
                         </select>
                     </div>
                 </form>
             </div>
 
             <div class="input-group width">
-                <input type="search" class="search form-control bg-form-input p-2 border-0 shad" placeholder="Search">
+                <input type="search" class="search form-control bg-form-input p-2 border-0 shad" id="search" placeholder="Search" [ngClass]="{'dark-mode': darkMode}">
                 <button class=" searchbutton input-group-text" type="button"> <i class="bi bi-search"></i>
                 </button>
             </div>
@@ -71,9 +71,9 @@
         <!-- sorting data and buttons need API and some logic
 angular material sorting is installed and ready to use -->
 
-    <div class=" d-flex justify-content-center">
-        <table class="table my-4">
-          <tr style="background-color: #F3fbff;">
+    <div class=" d-flex justify-content-center" >
+        <table class="table my-4" >
+          <tr class="tablehead" [ngClass]="{'darktable': darkMode}">
             <th>Metamanager</th>
             <th>Vendido</th>
             <th>Abierto</th>
@@ -82,10 +82,10 @@ angular material sorting is installed and ready to use -->
             <th>Mi Comision</th>
             <th>Comision</th>
           </tr>
-          <tr class="accordion" data-bs-toggle="collapse" href="#403718" (click)="toggleCollapse()">
+          <tr class="accordion" data-bs-toggle="collapse" href="#403718" (click)="toggleCollapse()" >
             <td class="justify-content-start d-flex align-items-center">
-              <span *ngIf="isCollapsed" class="me-2"><i class="bi bi-chevron-right" style="color: #33B5FF;"></i></span>
-              <span *ngIf="!isCollapsed" class="me-2"><i class="bi bi-chevron-down" style="color: #33B5FF;"></i></span>
+              <i class="bi bi-chevron-right" style="color: #33B5FF;" *ngIf="isCollapsed"></i>
+              <i class="bi bi-chevron-down" style="color: #33B5FF;" *ngIf="!isCollapsed"></i>
               <img src="../../assets/images/avatar/Ellipse 3.png" width="40" height="40" alt="">
               Andrea Yamilet Rangel Quiroz</td>
             <td><div class="d-flex">
@@ -109,8 +109,8 @@ angular material sorting is installed and ready to use -->
           </tr>
           <tr class="accordion" data-bs-toggle="collapse" href="#4037182" (click)="toggleCollapse()">
             <td class="justify-content-start d-flex align-items-center">
-              <span *ngIf="isCollapsed" class="me-2"><i class="bi bi-chevron-right" style="color: #33B5FF;"></i></span>
-              <span *ngIf="!isCollapsed" class="me-2"><i class="bi bi-chevron-down" style="color: #33B5FF;"></i></span>
+              <i class="bi bi-chevron-right" style="color: #33B5FF;" *ngIf="isCollapsed"></i>
+              <i class="bi bi-chevron-down" style="color: #33B5FF;" *ngIf="!isCollapsed"></i>
               <img src="../../assets/images/avatar/Ellipse 3.png" width="40" height="40" alt="">
               Andrea Yamilet Rangel Quiroz</td>
             <td><div class="d-flex">
@@ -134,8 +134,8 @@ angular material sorting is installed and ready to use -->
           </tr>
           <tr class="accordion" data-bs-toggle="collapse" href="#4037183" (click)="toggleCollapse()">
             <td class="justify-content-start d-flex align-items-center">
-              <span *ngIf="isCollapsed" class="me-2"><i class="bi bi-chevron-right" style="color: #33B5FF;"></i></span>
-              <span *ngIf="!isCollapsed" class="me-2"><i class="bi bi-chevron-down" style="color: #33B5FF;"></i></span>
+              <i class="bi bi-chevron-right" style="color: #33B5FF;" *ngIf="isCollapsed"></i>
+              <i class="bi bi-chevron-down" style="color: #33B5FF;" *ngIf="!isCollapsed"></i>
               <img src="../../assets/images/avatar/Ellipse 3.png" width="40" height="40" alt="">
               Andrea Yamilet Rangel Quiroz</td>
             <td><div class="d-flex">
@@ -159,8 +159,8 @@ angular material sorting is installed and ready to use -->
           </tr>
           <tr class="accordion" data-bs-toggle="collapse" href="#4037184" (click)="toggleCollapse()">
             <td class="justify-content-start d-flex align-items-center">
-              <span *ngIf="isCollapsed" class="me-2"><i class="bi bi-chevron-right" style="color: #33B5FF;"></i></span>
-              <span *ngIf="!isCollapsed" class="me-2"><i class="bi bi-chevron-down" style="color: #33B5FF;"></i></span>
+              <i class="bi bi-chevron-right" style="color: #33B5FF;" *ngIf="isCollapsed"></i>
+              <i class="bi bi-chevron-down" style="color: #33B5FF;" *ngIf="!isCollapsed"></i>
               <img src="../../assets/images/avatar/Ellipse 3.png" width="40" height="40" alt="">
               Andrea Yamilet Rangel Quiroz</td>
             <td><div class="d-flex">
@@ -184,8 +184,8 @@ angular material sorting is installed and ready to use -->
           </tr>
           <tr class="accordion" data-bs-toggle="collapse" href="#4037185" (click)="toggleCollapse()">
             <td class="justify-content-start d-flex align-items-center">
-              <span *ngIf="isCollapsed" class="me-2"><i class="bi bi-chevron-right" style="color: #33B5FF;"></i></span>
-              <span *ngIf="!isCollapsed" class="me-2"><i class="bi bi-chevron-down" style="color: #33B5FF;"></i></span>
+              <i class="bi bi-chevron-right" style="color: #33B5FF;" *ngIf="isCollapsed"></i>
+              <i class="bi bi-chevron-down" style="color: #33B5FF;" *ngIf="!isCollapsed"></i>
               <img src="../../assets/images/avatar/Ellipse 3.png" width="40" height="40" alt="">
               Andrea Yamilet Rangel Quiroz</td>
             <td><div class="d-flex">
@@ -209,8 +209,8 @@ angular material sorting is installed and ready to use -->
           </tr>
           <tr class="accordion" data-bs-toggle="collapse" href="#4037186" (click)="toggleCollapse()">
             <td class="justify-content-start d-flex align-items-center">
-              <span *ngIf="isCollapsed" class="me-2"><i class="bi bi-chevron-right" style="color: #33B5FF;"></i></span>
-              <span *ngIf="!isCollapsed" class="me-2"><i class="bi bi-chevron-down" style="color: #33B5FF;"></i></span>
+              <i class="bi bi-chevron-right" style="color: #33B5FF;" *ngIf="isCollapsed"></i>
+              <i class="bi bi-chevron-down" style="color: #33B5FF;" *ngIf="!isCollapsed"></i>
               <img src="../../assets/images/avatar/Ellipse 3.png" width="40" height="40" alt="">
               Andrea Yamilet Rangel Quiroz</td>
             <td><div class="d-flex">
@@ -241,12 +241,12 @@ angular material sorting is installed and ready to use -->
                   &#60;&#60; Previous</button>
                 <div>
                   <ul class="pagination">
-                    <li class="page-item"><a class="page-link" href="#">&#60;&#60;</a></li>
-                    <li class="page-item"><a class="page-link" href="#">&#60;</a></li>
-                    <li class="page-item"><a class="page-link active" style="color: black;" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" style="color: black;" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">></a></li>
-                    <li class="page-item"><a class="page-link" href="#">>></a></li>
+                    <li class="page-item"><a class="page-link bg-transparent" href="#">&#60;&#60;</a></li>
+                    <li class="page-item"><a class="page-link bg-transparent" href="#">&#60;</a></li>
+                    <li class="page-item"><a class="page-link bg-transparent active" style="color: black;" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link bg-transparent" style="color: black;" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link bg-transparent" href="#">></a></li>
+                    <li class="page-item"><a class="page-link bg-transparent" href="#">>></a></li>
                   </ul>
                 </div>
           

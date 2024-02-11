@@ -16,6 +16,7 @@ export class InstaladoChartComponent {
     this.chart = new Chart({
       chart: {
         type: 'column',
+        backgroundColor: 'transparent'
       },
       plotOptions: {
         column: {

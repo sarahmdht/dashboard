@@ -5,15 +5,15 @@
     <img src="../../assets/images/icons/info.png" width="25" height="25" class="m-3" title="More info..." alt="">
 </div>
 
-<div class="main p-3 container-fluid">
+<div class="main p-3 container-fluid" [ngClass]="{'darkmain': darkMode}">
     <form action="">
         <div class="m-3">
 
             <!-- Responsable -->
             <h4>Responsable</h4>
-            <div class="top20 p-3">
+            <div class="top20 p-3" [ngClass]="{'darktop20': darkMode}">
                 <label for="metamanager" class="form-label">Metamanager</label>
-                <select id="metamanager" class="form-select w-50 bg-secondary-subtle">
+                <select id="metamanager" class="form-select w-50 " [ngClass]="{'dark-mode': darkMode}">
                     <option>Andrea Yamilet Rangel Quiroz</option>
                     <option>Andrea Yamilet Rangel Quiroz</option>
                 </select>
@@ -21,11 +21,11 @@
 
             <!-- cliente -->
             <h4 class="mt-4">Cliente</h4>
-            <div class="top20 p-3">
+            <div class="top20 p-3" [ngClass]="{'darktop20': darkMode}">
                 <div class="d-flex justify-content-between">
                     <div>
                         <label for="cliente" class="form-label">Cliente</label>
-                        <select id="cliente" class="form-select width bg-secondary-subtle">
+                        <select id="cliente" class="form-select width" [ngClass]="{'dark-mode': darkMode}">
                             <option></option>
                             <option>Andrea Yamilet Rangel Quiroz</option>
                             <option>Andrea Yamilet Rangel Quiroz</option>
@@ -35,7 +35,7 @@
 
                     <div>
                         <label for="estado" class="form-label">Estado</label>
-                        <select id="estado" class="form-select width bg-secondary-subtle">
+                        <select id="estado" class="form-select width" [ngClass]="{'dark-mode': darkMode}">
                             <option></option>
                             <option>1</option>
                             <option>2</option>
@@ -44,7 +44,7 @@
 
                     <div>
                         <label for="cludad" class="form-label">Cludad</label>
-                        <select id="cludad" class="form-select width  bg-secondary-subtle">
+                        <select id="cludad" class="form-select width" [ngClass]="{'dark-mode': darkMode}">
                             <option></option>
                             <option>1</option>
                             <option>2</option>
@@ -55,17 +55,17 @@
                 <div class="d-flex justify-content-between mt-3">
                     <div>
                         <label for="deleg" class="form-label">Deleg.o Munic</label>
-                        <input type="text" id="deleg" class="form-control w-30 bg-secondary-subtle" name="deleg">
+                        <input type="text" id="deleg" class="form-control w-30" [ngClass]="{'dark-mode': darkMode}" name="deleg">
                     </div>
 
                     <div>
                         <label for="nombre" class="form-label">Nombre del Cliente</label>
-                        <input type="number" id="nombre" class="form-control w-30 bg-secondary-subtle" name="nombre">
+                        <input type="number" id="nombre" class="form-control w-30" [ngClass]="{'dark-mode': darkMode}" name="nombre">
                     </div>
 
                     <div>
                         <label for="tel1" class="form-label">Telefono 1</label>
-                        <input type="tel" id="tel1" class="form-control w-30 bg-secondary-subtle"
+                        <input type="tel" id="tel1" class="form-control w-30" [ngClass]="{'dark-mode': darkMode}"
                             pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="tel1">
                     </div>
                 </div>
@@ -73,19 +73,19 @@
                 <div class="d-flex justify-content-between mt-3">
                     <div>
                         <label for="tel2" class="form-label">Telefono 2</label>
-                        <input type="tel" id="tel2" name="tel2" class="form-control w-30 bg-secondary-subtle"
+                        <input type="tel" id="tel2" name="tel2" class="form-control w-30" [ngClass]="{'dark-mode': darkMode}"
                             pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
                     </div>
 
                     <div>
                         <label for="Whatsapp" class="form-label">Whatsapp</label>
-                        <input type="tel" id="Whatsapp" name="Whatsapp" class="form-control w-30 bg-secondary-subtle"
+                        <input type="tel" id="Whatsapp" name="Whatsapp" class="form-control w-30 " [ngClass]="{'dark-mode': darkMode}"
                             pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
                     </div>
 
                     <div>
                         <label for="fb" class="form-label">Facebook</label>
-                        <input type="text" id="fb" name="fb" class="form-control w-30 bg-secondary-subtle">
+                        <input type="text" id="fb" name="fb" class="form-control w-30 " [ngClass]="{'dark-mode': darkMode}">
                     </div>
                 </div>
             </div>
@@ -93,38 +93,38 @@
 
             <!-- direccion -->
             <h4 class="mt-4">Direccion</h4>
-            <div class="top20 p-3">
+            <div class="top20 p-3" [ngClass]="{'darktop20': darkMode}">
                 <div class="d-flex justify-content-between">
                     <div>
                         <label for="calle" class="form-label">Calle</label>
-                        <input type="text" id="calle" name="calle" class="form-control w-30 bg-secondary-subtle">
+                        <input type="text" id="calle" name="calle" class="form-control w-30 " [ngClass]="{'dark-mode': darkMode}">
                     </div>
 
                     <div>
                         <label for="colonia" class="form-label">Colonia</label>
-                        <input type="text" id="colonia" name="colonia" class="form-control w-30 bg-secondary-subtle">
+                        <input type="text" id="colonia" name="colonia" class="form-control w-30 " [ngClass]="{'dark-mode': darkMode}">
                     </div>
 
                     <div>
                         <label for="numext" class="form-label">Num. Ext.</label>
-                        <input type="text" id="numext" name="numext" class="form-control w-30 bg-secondary-subtle">
+                        <input type="text" id="numext" name="numext" class="form-control w-30 " [ngClass]="{'dark-mode': darkMode}">
                     </div>
                 </div>
 
                 <div class="d-flex justify-content-between mt-3">
                     <div>
                         <label for="numint" class="form-label">Num. int.</label>
-                        <input type="text" id="numint" name="numint" class="form-control w-30 bg-secondary-subtle">
+                        <input type="text" id="numint" name="numint" class="form-control w-30 " [ngClass]="{'dark-mode': darkMode}">
                     </div>
 
                     <div>
                         <label for="postal" class="form-label">Codigo Postal</label>
-                        <input type="text" id="postal" name="postal" class="form-control w-30 bg-secondary-subtle">
+                        <input type="text" id="postal" name="postal" class="form-control w-30 " [ngClass]="{'dark-mode': darkMode}">
                     </div>
 
                     <div>
                         <label for="cal1" class="form-label">Enter Call 1</label>
-                        <input type="text" id="cal1" name="cal1" class="form-control w-30 bg-secondary-subtle"
+                        <input type="text" id="cal1" name="cal1" class="form-control w-30 " [ngClass]="{'dark-mode': darkMode}"
                             pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
                     </div>
                 </div>
@@ -132,19 +132,19 @@
                 <div class="d-flex justify-content-between mt-3">
                     <div>
                         <label for="call2" class="form-label">Enter Call 2</label>
-                        <input type="text" id="call2" name="call2" class="form-control w-30 bg-secondary-subtle"
+                        <input type="text" id="call2" name="call2" class="form-control w-30 " [ngClass]="{'dark-mode': darkMode}"
                             pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
                     </div>
 
                     <div>
                         <label for="Indentificacion" class="form-label">Indentificacion</label>
                         <input type="text" id="Indentificacion" name="Indentificacion"
-                            class="form-control w-30 bg-secondary-subtle" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                            class="form-control w-30 " [ngClass]="{'dark-mode': darkMode}" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
                     </div>
 
                     <div>
                         <label for="idNo" class="form-label">Numero de identificacion</label>
-                        <input type="text" id="idNo" name="idNo" class="form-control w-30 bg-secondary-subtle">
+                        <input type="text" id="idNo" name="idNo" class="form-control w-30 " [ngClass]="{'dark-mode': darkMode}">
                     </div>
                 </div>
 
@@ -152,24 +152,24 @@
                 <div class="d-flex justify-content-between mt-3">
                     <div>
                         <label for="email" class="form-label">Email</label>
-                        <input type="email" id="email" name="email" class="form-control w-30 bg-secondary-subtle">
+                        <input type="email" id="email" name="email" autocomplete="email" class="form-control w-30 " [ngClass]="{'dark-mode': darkMode}">
                     </div>
 
                     <div>
                         <label for="quien" class="form-label">Quien Atiede</label>
-                        <input type="text" id="quien" name="quien" class="form-control w-30 bg-secondary-subtle">
+                        <input type="text" id="quien" name="quien" class="form-control w-30 " [ngClass]="{'dark-mode': darkMode}">
                     </div>
 
                     <div>
                         <label for="telat" class="form-label">Telefono Atiede</label>
-                        <input type="tel" id="telat" name="telat" class="form-control w-30 bg-secondary-subtle"
+                        <input type="tel" id="telat" name="telat" class="form-control w-30 " [ngClass]="{'dark-mode': darkMode}"
                             pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
                     </div>
                 </div>
 
                 <div class="mt-3">
                     <label for="sipre" class="form-label width">Sipre</label>
-                    <input type="text" id="sipre" name="sipre" class="form-control  width bg-secondary-subtle">
+                    <input type="text" id="sipre" name="sipre" class="form-control  width " [ngClass]="{'dark-mode': darkMode}">
                 </div>
 
             </div>
@@ -177,11 +177,11 @@
 
             <!-- producto -->
             <h4 class="mt-4">Producto</h4>
-            <div class="top20 p-4">
+            <div class="top20 p-4" [ngClass]="{'darktop20': darkMode}">
                 <div class="d-flex justify-content-between">
                     <div>
                         <label for="tipo" class="form-label">Tipo Venta</label>
-                        <select id="tipo" class="form-select width bg-secondary-subtle">
+                        <select id="tipo" class="form-select width " [ngClass]="{'dark-mode': darkMode}">
                             <option></option>
                             <option>Andrea Yamilet Rangel Quiroz</option>
                             <option>Andrea Yamilet Rangel Quiroz</option>
@@ -191,7 +191,7 @@
 
                     <div>
                         <label for="prod" class="form-label">Producto Contratado</label>
-                        <select id="prod" class="form-select width bg-secondary-subtle">
+                        <select id="prod" class="form-select width " [ngClass]="{'dark-mode': darkMode}">
                             <option></option>
                             <option>1</option>
                             <option>2</option>
@@ -199,8 +199,8 @@
                     </div>
 
                     <div>
-                        <label for="caja" class="form-label">Caja SD</label>
-                        <select id="caja" class="form-select width  bg-secondary-subtle">
+                        <label for="cajasd" class="form-label">Caja SD</label>
+                        <select id="cajasd" class="form-select width  " [ngClass]="{'dark-mode': darkMode}">
                             <option></option>
                             <option>1</option>
                             <option>2</option>
@@ -211,7 +211,7 @@
                 <div class="d-flex justify-content-between mt-3">
                     <div>
                         <label for="cajah" class="form-label">Caja HD</label>
-                        <select id="cajah" class="form-select width  bg-secondary-subtle">
+                        <select id="cajah" class="form-select width  " [ngClass]="{'dark-mode': darkMode}">
                             <option></option>
                             <option>1</option>
                             <option>2</option>
@@ -219,8 +219,8 @@
                     </div>
 
                     <div>
-                        <label for="caja" class="form-label">Franja Hararia</label>
-                        <select id="caja" class="form-select width  bg-secondary-subtle">
+                        <label for="franja" class="form-label">Franja Hararia</label>
+                        <select id="franja" class="form-select width  " [ngClass]="{'dark-mode': darkMode}">
                             <option></option>
                             <option>1</option>
                             <option>2</option>
@@ -231,12 +231,12 @@
 
                         <div class="col-6">
                             <label for="rgu" class="form-label">RGU</label>
-                            <input type="text" id="rgu" class="form-control bg-secondary-subtle" name="rgu">
+                            <input type="text" id="rgu" class="form-control " [ngClass]="{'dark-mode': darkMode}" name="rgu">
                         </div>
 
                         <div class="col-6">
                             <label for="monto" class="form-label text-nowrap">Monto Producto</label>
-                            <select id="monto" class="form-select bg-secondary-subtle">
+                            <select id="monto" class="form-select " [ngClass]="{'dark-mode': darkMode}">
                                 <option></option>
                                 <option>1</option>
                                 <option>2</option>
@@ -248,7 +248,7 @@
 
                 <div class="mt-3">
                     <label for="origen" class="form-label">Origen de Venta</label>
-                    <select id="origen" class="form-select width bg-secondary-subtle">
+                    <select id="origen" class="form-select width " [ngClass]="{'dark-mode': darkMode}">
                         <option></option>
                         <option>Andrea Yamilet Rangel Quiroz</option>
                         <option>Andrea Yamilet Rangel Quiroz</option>
@@ -258,7 +258,7 @@
 
                 <div class="mt-3">
                     <label for="comment" class="form-label">Comentarios</label>
-                    <textarea class="form-control bg-secondary-subtle" id="comment" rows="5" id="comment" name="text"></textarea>
+                    <textarea class="form-control " [ngClass]="{'dark-mode': darkMode}" id="comment" rows="5" name="text"></textarea>
 
                 </div>
 
@@ -267,7 +267,7 @@
 
             <!-- documentos -->
             <h4 class="mt-4">Documentos</h4>
-            <div class="top20 p-4">
+            <div class="top20 p-4" [ngClass]="{'darktop20': darkMode}">
                 <div class="d-flex justify-content-between">
                     <div class="col-6 p-3 my-auto">
                     <app-upload-file></app-upload-file>
@@ -275,7 +275,7 @@
                     <div class="col-5">
                         <div>
                         <label for="doctype" class="form-label">Tipo Documento</label>
-                    <select id="doctype" class="form-select width bg-secondary-subtle">
+                    <select id="doctype" class="form-select width " [ngClass]="{'dark-mode': darkMode}">
                         <option></option>
                         <option>pdf</option>
                         <option>docx</option>
@@ -284,7 +284,7 @@
 
                     <div class="mt-3">
                         <label for="descripe" class="form-label">Desctiption</label>
-                        <textarea id="descripe" class="form-control bg-secondary-subtle" rows="4" id="comment" name="text"></textarea>
+                        <textarea id="descripe" class="form-control " [ngClass]="{'dark-mode': darkMode}" rows="4" name="text"></textarea>
     
                     </div>
                     </div>

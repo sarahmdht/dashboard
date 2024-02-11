@@ -1,16 +1,16 @@
-<div class=" d-flex border-bottom p-2 mx-5 justify-content-between align-items-baseline">
+<div class=" d-flex border-bottom p-3 justify-content-between align-items-baseline">
   <div class="d-flex align-items-baseline">
     <h2>Mi Ingresos</h2>
   </div>
   <img src="../../assets/images/icons/info.png" width="25" height="25" class="m-3" title="More info..." alt="">
 </div>
 
-<div class="main container-fluid p-3">
-  <div class="top20 p-5 m-3 d-flex justify-content-center">
+<div class="main container-fluid p-3" [ngClass]="{'darkmain': darkMode}">
+  <div class="top20 p-5 m-3 d-flex justify-content-center" [ngClass]="{'darktop20': darkMode}">
     <app-ingresos-chart></app-ingresos-chart>
     </div>
 
-  <div class="top20  p-5 m-3 d-flex  flex-column justify-content-center">
+  <div class="top20  p-5 m-3 d-flex  flex-column justify-content-center" [ngClass]="{'darktop20': darkMode}">
     <!-- table  -->
 
     <!-- sorting data and buttons need API and some logic
@@ -18,7 +18,7 @@ angular material sorting is installed and ready to use -->
 
     <div class=" d-flex justify-content-center">
       <table class="table table-striped">
-        <tr style="background-color: #FDFDFD;">
+        <tr class="tablehead" [ngClass]="{'darktable': darkMode}">
           <th>Consecutivo <i class="bi bi-arrow-down-up"></i></th>
           <th>Semana <i class="bi bi-arrow-down-up"></i></th>
           <th>Instalado<br>Personal <i class="bi bi-arrow-down-up"></i></th>
@@ -30,8 +30,8 @@ angular material sorting is installed and ready to use -->
         </tr>
         <tr class="accordion" data-bs-toggle="collapse" href="#403718" (click)="toggleCollapse()">
           <td class="justify-content-start d-flex align-items-center">
-            <span *ngIf="isCollapsed" class="me-2"><i class="bi bi-chevron-right"></i></span>
-            <span *ngIf="!isCollapsed" class="me-2"><i class="bi bi-chevron-down"></i></span>
+            <i class="bi bi-chevron-right" *ngIf="isCollapsed" ></i>
+            <i class="bi bi-chevron-down" *ngIf="!isCollapsed"></i>
             72.3
           </td>
           <td>2024</td>
@@ -65,8 +65,8 @@ angular material sorting is installed and ready to use -->
         </tr>
         <tr class="accordion" data-bs-toggle="collapse" href="#4037182" (click)="toggleCollapse()">
           <td class="justify-content-start d-flex align-items-center">
-            <span *ngIf="isCollapsed" class="me-2"><i class="bi bi-chevron-right"></i></span>
-            <span *ngIf="!isCollapsed" class="me-2"><i class="bi bi-chevron-down"></i></span>
+            <i class="bi bi-chevron-right" *ngIf="isCollapsed" ></i>
+            <i class="bi bi-chevron-down" *ngIf="!isCollapsed"></i>
             72.3
           </td>
           <td>2024</td>
@@ -100,8 +100,8 @@ angular material sorting is installed and ready to use -->
         </tr>
         <tr class="accordion" data-bs-toggle="collapse" href="#4037183" (click)="toggleCollapse()">
           <td class="justify-content-start d-flex align-items-center">
-            <span *ngIf="isCollapsed" class="me-2"><i class="bi bi-chevron-right"></i></span>
-            <span *ngIf="!isCollapsed" class="me-2"><i class="bi bi-chevron-down"></i></span>
+            <i class="bi bi-chevron-right" *ngIf="isCollapsed" ></i>
+            <i class="bi bi-chevron-down" *ngIf="!isCollapsed"></i>
             72.3
           </td>
           <td>2024</td>
@@ -135,8 +135,8 @@ angular material sorting is installed and ready to use -->
         </tr>
         <tr class="accordion" data-bs-toggle="collapse" href="#4037184" (click)="toggleCollapse()">
           <td class="justify-content-start d-flex align-items-center">
-            <span *ngIf="isCollapsed" class="me-2"><i class="bi bi-chevron-right"></i></span>
-            <span *ngIf="!isCollapsed" class="me-2"><i class="bi bi-chevron-down"></i></span>
+            <i class="bi bi-chevron-right" *ngIf="isCollapsed"></i>
+            <i class="bi bi-chevron-down" *ngIf="!isCollapsed"></i>
             72.3
           </td>
           <td>2024</td>

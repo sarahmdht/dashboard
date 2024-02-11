@@ -17,6 +17,9 @@ p {
   button {
     border: none;
     background-color: transparent;
+    border-radius: 50%;
+    padding: 2px;
+    margin: 5px
   }
 
 
@@ -64,7 +67,7 @@ p {
   
 }
 
-.theme::after {
+.darktheme:before {
     background-image: url(../../assets/images/icons/moon.png);
 }
 
@@ -103,6 +106,11 @@ input:checked + .theme:before {
   
   .bi {
     color: #5e5d5d;
+  }
+
+  .darkbi {
+    color: white;
+    background-color: transparent;
   }
 
   .chartnav {
@@ -152,4 +160,10 @@ border: none;
 
 .data:nth-child(even) {
     background-color: #fafafa;
+}
+
+.check {
+    border: 1px solid #5e5d5d;
+    border-radius: 50%;
+    padding: 0.2px 2px;
 }

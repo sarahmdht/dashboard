@@ -1,5 +1,5 @@
 <!-- page title  -->
-<div class="d-flex border p-3 align-items-baseline">
+<div class="d-flex p-3 align-items-baseline">
     <h2 class="fw-medium">Mi Perfile</h2>
     <h4 class="ms-3 title fw-light greytext">Administracion de perfile</h4>
 </div>
@@ -183,7 +183,7 @@
     <div class="p-3">
         <div class="d-flex justify-content-between">
             <div>
-                <h3>Top 20 MetaManagers</h3>
+                <h2>Top 20 MetaManagers</h2>
                 <p class="fs-6 greytext">Instalado 30 dias</p>
             </div>
             <div class="d-flex align-items-center mb-3">
@@ -208,7 +208,7 @@
                 <form>
                     <div class="input-group">
                         <span class="input-group-text text-bg-light"><i class="bi bi-calendar-minus"></i></span>
-                        <select class="form-select bg-white">
+                        <select class="form-select" [ngClass]="{'dark-mode': darkMode}" [ngClass]="{'dark-mode': darkMode}">
                             <option>01/02/2024</option>
                             <option>02/2/2024</option>
                             <option>03/02/2024</option>
@@ -235,14 +235,14 @@
     <div class="p-3">
         <div class="d-flex justify-content-between">
             <div>
-                <h3>Mi Progreso</h3>
+                <h2>Mi Progreso</h2>
                 <p class="fs-6 greytext">Instalado 30 dias</p>
             </div>
             <div>
                 <form>
                     <div class="input-group">
                         <span class="input-group-text text-bg-light"><i class="bi bi-calendar-minus"></i></span>
-                        <select class="form-select bg-white">
+                        <select class="form-select" [ngClass]="{'dark-mode': darkMode}">
                             <option>semana 3</option>
                             <option>Semana 4</option>
                             <option>Semana 5</option>
@@ -361,7 +361,7 @@
 
     <!-- mi rendimento  -->
     <div class="p-3">
-        <h4>Mi Rendimento</h4>
+        <h2>Mi Rendimento</h2>
         <div class="top20 p-3" [ngClass]="{'darktop20': darkMode}">
             <!-- top section  -->
             <div class="d-flex">
@@ -449,14 +449,14 @@
     <div class="p-3">
         <div class="d-flex justify-content-between align-items-baseline">
             <div>
-                <h4>Resultados por fecha</h4>
+                <h2>Resultados por fecha</h2>
             </div>
             <div class="d-flex mb-2">
                 <p class="fs-5 greytext">Rangos por fechas: </p>
                 <form>
                     <div class="input-group">
                         <span class="input-group-text text-bg-light"><i class="bi bi-calendar-minus"></i></span>
-                        <select class="form-select bg-white">
+                        <select class="form-select" [ngClass]="{'dark-mode': darkMode}">
                             <option>semana 3</option>
                             <option>Semana 4</option>
                             <option>Semana 5</option>
@@ -466,7 +466,7 @@
                 <form>
                     <div class="input-group">
                         <span class="input-group-text text-bg-light"><i class="bi bi-calendar-minus"></i></span>
-                        <select class="form-select bg-white">
+                        <select class="form-select" [ngClass]="{'dark-mode': darkMode}">
                             <option>semana 3</option>
                             <option>Semana 4</option>
                             <option>Semana 5</option>

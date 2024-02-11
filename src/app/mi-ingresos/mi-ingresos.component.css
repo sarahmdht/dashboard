@@ -16,9 +16,9 @@ table {
 }
 
 th , .inner th {
-    background-color: #E7F3F9;
     text-wrap: nowrap;
 }
+
 
 th,
 td {
@@ -29,7 +29,7 @@ td {
 }
 
 tr:nth-child(3n+1) {
-    background-color: #fafafa;
+    background-color: rgba(248,252,255,0.2);
 }
 
 .chartnav {
@@ -53,4 +53,8 @@ tr:nth-child(3n+1) {
 .page-link {
     border: none;
     color: #849396;
+}
+
+a {
+    background-color: transparent;
 }
