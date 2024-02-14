@@ -1,6 +1,7 @@
-.header{
+.header {
     height: 120;
 }
+
 h6 {
     font-size: 11px;
 }
@@ -9,22 +10,22 @@ p {
     font-size: 8px;
 }
 
-  .offline {
+.offline {
     background: gray;
     font-size: 5px;
-  }
+}
 
-  button {
+button {
     border: none;
     background-color: transparent;
     border-radius: 50%;
     padding: 2px;
     margin: 5px
-  }
+}
 
 
-   /* The switch - the container */
-   .switch {
+/* The switch - the container */
+.switch {
     position: relative;
     display: inline-block;
     width: 50px;
@@ -64,22 +65,22 @@ p {
     background-position: center;
     -webkit-transition: .3s;
     transition: .3s;
-  
+
 }
 
 .darktheme:before {
     background-image: url(../../assets/images/icons/moon.png);
 }
 
-input:checked + .theme {
+input:checked+.theme {
     background-color: #DAE4EA;
 }
 
-input:focus + .theme {
+input:focus+.theme {
     box-shadow: 0 0 1px #DAE4EA;
 }
 
-input:checked + .theme:before {
+input:checked+.theme:before {
     -webkit-transform: translateX(20px);
     -ms-transform: translateX(20px);
     transform: translateX(20px);
@@ -102,18 +103,18 @@ input:checked + .theme:before {
 
 .dropdown-toggle::after {
     display: none;
-  }
-  
-  .bi {
-    color: #5e5d5d;
-  }
+}
 
-  .darkbi {
+.bi {
+    color: #5e5d5d;
+}
+
+.darkbi {
     color: white;
     background-color: transparent;
-  }
+}
 
-  .chartnav {
+.chartnav {
     background-color: #33b5ff;
     color: white;
     border: 0;
@@ -132,28 +133,24 @@ input:checked + .theme:before {
     border: none;
     border-radius: 50px 0px 0px 50px;
 }
-.search{
-border-radius: 0px 50px 50px 0px;
-border: none;
+
+.search {
+    border-radius: 0px 50px 50px 0px;
+    border: none;
 
 
 }
 
-.search::-webkit-input-placeholder { 
+.search::-webkit-input-placeholder {
     font-size: 14px;
-  }
+}
 
-  #checklist {
-    position: absolute;
-    margin: 0px;
-    transform: translate(0px, 80px);
-  }
 
-  .fading-border {
+.fading-border {
     width: 4px;
     height: 50px;
     border-left: 3px solid transparent;
-    background-image: linear-gradient(to bottom, transparent,grey, transparent);
+    background-image: linear-gradient(to bottom, transparent, grey, transparent);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
@@ -166,4 +163,11 @@ border: none;
     border: 1px solid #5e5d5d;
     border-radius: 50%;
     padding: 0.2px 2px;
+}
+
+.dropdown-menu {
+    position: absolute;
+    inset: 0px 0px auto auto !important;
+    margin: 0px;
+    transform: translate(-5px, 33px) !important;
 }

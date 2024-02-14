@@ -82,15 +82,16 @@ background-color: #F8FCFF;
 
 .darktable {
 background-color: #242B39 !important;
+color: #fff !important;
 }
 
-/* .bg-form-input {
-  background-color: #F5F8FA !important;
+::placeholder {
+  color: #2e3542;
 }
 
-.darkbg-form {
-  background-color: #242B39 !important;
-} */
+.dark-mode ::placeholder {
+  color: #9c9ea3;
+}
 
 select, input {
   background-color: #F1F7FB;
@@ -165,8 +166,10 @@ border: 0;
   }
 
   .down {
-    bottom:-2px;
-    right: 10px;
+    bottom:1px;
+    right: 4px;
+    position: absolute;
+    transform: translate(50%, -50%);
   }
 
   .badge {

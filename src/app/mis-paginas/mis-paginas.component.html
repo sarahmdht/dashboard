@@ -24,9 +24,9 @@
       <!-- Tab panes -->
       <div class="tab-content">
         <!-- tab1 -->
-        <div class="tab-pane container active m-3" id="consecutivos">
+        <div class="tab-pane container active m-3" id="consecutivos" [ngClass]="{'dark-mode': darkMode}">
           <!-- form    -->
-          <form class="d-flex align-items-baseline">
+          <form class="d-flex align-items-center">
             <label for="Nombre" class="form-label me-2">Buscar Por: </label>
             <input type="text" id="Nombre" name="Nombre" placeholder="Nombre" class="form-control" [ngClass]="{'dark-mode': darkMode}">
             <input type="text" id="primer" name="primer" placeholder="Primer Appelido"
@@ -46,14 +46,14 @@
                 <span *ngIf="!isCollapsed" class="me-2"><i class="bi bi-dash-circle-fill text-danger fs-5"></i></span>
                 403718 - ANDREA YAMILET RANGEL QUIROZ
               </a>
-              <h4 class="btn">Paginas</h4>
+              <h4 class="btn" [ngClass]="{'dark-mode': darkMode}">Paginas</h4>
             </div>
             <!-- data  -->
             <div id="403718" class="collapse" data-bs-parent="#accordion">
-              <div class="card-body show data p-0" [ngClass]="{'darkdata': darkMode}">
+              <div class="card-body show data p-0" [ngClass]="{'darktable': darkMode}">
                 <!-- row1  -->
-                <div class="card-header data m-0 p-2 d-flex justify-content-between align-items-baseline" [ngClass]="{'darkdata': darkMode}">
-                  <a class="btn" data-bs-toggle="collapse" href="#row1" (click)="toggleCollapse()">
+                <div class="card-header data m-0 p-2 d-flex justify-content-between align-items-baseline" [ngClass]="{'darktable': darkMode}">
+                  <a class="btn" data-bs-toggle="collapse" href="#row1" (click)="toggleCollapse()" [ngClass]="{'darka': darkMode}">
                     <span *ngIf="isCollapsed" class="me-2"><i class="bi bi-plus-circle-fill text-primary fs-5"></i></span>
                     <span *ngIf="!isCollapsed" class="me-2"><i class="bi bi-dash-circle-fill text-danger fs-5"></i></span>
                     72.2
@@ -63,13 +63,13 @@
                     <button class="button2 button accbutton" type="button">Invertir</button>
                   </div>
                 </div>
-                <div class="card-body data p-0" [ngClass]="{'darkdata': darkMode}">
+                <div class="card-body data p-0" [ngClass]="{'darktable': darkMode}">
                   <div id="row1" class="collapse" data-bs-parent="#accordion">Lorem ipsum..</div>
                 </div>
 
                 <!-- row2  -->
-                <div class="card-header data m-0 p-2 d-flex justify-content-between align-items-baseline" [ngClass]="{'darkdata': darkMode}">
-                  <a class="btn" data-bs-toggle="collapse" href="#row2" (click)="toggleCollapse()">
+                <div class="card-header data m-0 p-2 d-flex justify-content-between align-items-baseline" [ngClass]="{'darktable': darkMode}">
+                  <a class="btn" data-bs-toggle="collapse" href="#row2" (click)="toggleCollapse()" [ngClass]="{'darka': darkMode}">
                     <span *ngIf="isCollapsed" class="me-2"><i class="bi bi-plus-circle-fill text-primary fs-5"></i></span>
                     <span *ngIf="!isCollapsed" class="me-2"><i class="bi bi-dash-circle-fill text-danger fs-5"></i></span>
                     72.2
@@ -83,8 +83,8 @@
                   <div id="row2" class="collapse" data-bs-parent="#accordion">Lorem ipsum..</div>
                 </div>
                 <!-- row3  -->
-                <div class="card-header data m-0 p-2 d-flex justify-content-between align-items-baseline" [ngClass]="{'darkdata': darkMode}">
-                  <a class="btn" data-bs-toggle="collapse" href="#row3" (click)="toggleCollapse()">
+                <div class="card-header data m-0 p-2 d-flex justify-content-between align-items-baseline" [ngClass]="{'darktable': darkMode}">
+                  <a class="btn" data-bs-toggle="collapse" href="#row3" (click)="toggleCollapse()" [ngClass]="{'darka': darkMode}">
                     <span *ngIf="isCollapsed" class="me-2"><i class="bi bi-plus-circle-fill text-primary fs-5"></i></span>
                     <span *ngIf="!isCollapsed" class="me-2"><i class="bi bi-dash-circle-fill text-danger fs-5"></i></span>
                     72.2
@@ -94,12 +94,12 @@
                     <button class="button2 button accbutton" type="button">Invertir</button>
                   </div>
                 </div>
-                <div class="card-body data p-0" [ngClass]="{'darkdata': darkMode}">
+                <div class="card-body data p-0" [ngClass]="{'darktable': darkMode}">
                   <div id="row3" class="collapse" data-bs-parent="#accordion">Lorem ipsum..</div>
                 </div>
                 <!-- row4  -->
-                <div class="card-header data m-0 p-2 d-flex justify-content-between align-items-baseline" [ngClass]="{'darkdata': darkMode}">
-                  <a class="btn" data-bs-toggle="collapse" href="#row4" (click)="toggleCollapse()">
+                <div class="card-header data m-0 p-2 d-flex justify-content-between align-items-baseline" [ngClass]="{'darktable': darkMode}">
+                  <a class="btn" data-bs-toggle="collapse" href="#row4" (click)="toggleCollapse()" [ngClass]="{'darka': darkMode}">
                     <span *ngIf="isCollapsed" class="me-2"><i class="bi bi-plus-circle-fill text-primary fs-5"></i></span>
                     <span *ngIf="!isCollapsed" class="me-2"><i class="bi bi-dash-circle-fill text-danger fs-5"></i></span>
                     72.2
@@ -109,12 +109,12 @@
                     <button class="button2 button accbutton" type="button">Invertir</button>
                   </div>
                 </div>
-                <div class="card-body data p-0" [ngClass]="{'darkdata': darkMode}">
+                <div class="card-body data p-0" [ngClass]="{'darktable': darkMode}">
                   <div id="row4" class="collapse" data-bs-parent="#accordion">Lorem ipsum..</div>
                 </div>
                 <!-- row5  -->
-                <div class="card-header data m-0 p-2 d-flex justify-content-between align-items-baseline" [ngClass]="{'darkdata': darkMode}">
-                  <a class="btn" data-bs-toggle="collapse" href="#row5" (click)="toggleCollapse()">
+                <div class="card-header data m-0 p-2 d-flex justify-content-between align-items-baseline" [ngClass]="{'darktable': darkMode}">
+                  <a class="btn" data-bs-toggle="collapse" href="#row5" (click)="toggleCollapse()" [ngClass]="{'darka': darkMode}">
                     <span *ngIf="isCollapsed" class="me-2"><i class="bi bi-plus-circle-fill text-primary fs-5"></i></span>
                     <span *ngIf="!isCollapsed" class="me-2"><i class="bi bi-dash-circle-fill text-danger fs-5"></i></span>
                     72.2
@@ -124,12 +124,12 @@
                     <button class="button2 button accbutton" type="button">Invertir</button>
                   </div>
                 </div>
-                <div class="card-body data p-0" [ngClass]="{'darkdata': darkMode}">
+                <div class="card-body data p-0" [ngClass]="{'darktable': darkMode}">
                   <div id="row5" class="collapse" data-bs-parent="#accordion">Lorem ipsum..</div>
                 </div>
                 <!-- row6  -->
-                <div class="card-header data m-0 p-2 d-flex justify-content-between align-items-baseline" [ngClass]="{'darkdata': darkMode}">
-                  <a class="btn" data-bs-toggle="collapse" href="#row6" (click)="toggleCollapse()">
+                <div class="card-header data m-0 p-2 d-flex justify-content-between align-items-baseline" [ngClass]="{'darktable': darkMode}">
+                  <a class="btn" data-bs-toggle="collapse" href="#row6" (click)="toggleCollapse()" [ngClass]="{'darka': darkMode}">
                     <span *ngIf="isCollapsed" class="me-2"><i class="bi bi-plus-circle-fill text-primary fs-5"></i></span>
                     <span *ngIf="!isCollapsed" class="me-2"><i class="bi bi-dash-circle-fill text-danger fs-5"></i></span>
                     72.2
@@ -139,7 +139,7 @@
                     <button class="button2 button accbutton" type="button">Invertir</button>
                   </div>
                 </div>
-                <div class="card-body data p-0" [ngClass]="{'darkdata': darkMode}">
+                <div class="card-body data p-0" [ngClass]="{'darktable': darkMode}">
                   <div id="row6" class="collapse" data-bs-parent="#accordion">Lorem ipsum..</div>
                 </div>
 
@@ -156,14 +156,14 @@
                 <span *ngIf="!isCollapsed" class="me-2"><i class="bi bi-dash-circle-fill text-danger fs-5"></i></span>
                 403718 - ANDREA YAMILET RANGEL QUIROZ
               </a>
-              <h4 class="btn">Paginas</h4>
+              <h4 class="btn" [ngClass]="{'dark-mode': darkMode}">Paginas</h4>
             </div>
             <!-- data  -->
             <div id="4037182" class="collapse" data-bs-parent="#accordion2">
-              <div class="card-body show data p-0" [ngClass]="{'darkdata': darkMode}">
+              <div class="card-body show data p-0" [ngClass]="{'darktable': darkMode}">
                 <!-- row12  -->
-                <div class="card-header data m-0 p-2 d-flex justify-content-between align-items-baseline" [ngClass]="{'darkdata': darkMode}">
-                  <a class="btn" data-bs-toggle="collapse" href="#row12" (click)="toggleCollapse()">
+                <div class="card-header data m-0 p-2 d-flex justify-content-between align-items-baseline" [ngClass]="{'darktable': darkMode}">
+                  <a class="btn" data-bs-toggle="collapse" href="#row12" (click)="toggleCollapse()" [ngClass]="{'darka': darkMode}">
                     <span *ngIf="isCollapsed" class="me-2"><i class="bi bi-plus-circle-fill text-primary fs-5"></i></span>
                     <span *ngIf="!isCollapsed" class="me-2"><i class="bi bi-dash-circle-fill text-danger fs-5"></i></span>
                     72.2
@@ -173,13 +173,13 @@
                     <button class="button2 button accbutton" type="button">Invertir</button>
                   </div>
                 </div>
-                <div class="card-body data p-0" [ngClass]="{'darkdata': darkMode}">
+                <div class="card-body data p-0" [ngClass]="{'darktable': darkMode}">
                   <div id="row12" class="collapse" data-bs-parent="#accordion2">Lorem ipsum..</div>
                 </div>
 
                 <!-- row22  -->
-                <div class="card-header data m-0 p-2 d-flex justify-content-between align-items-baseline" [ngClass]="{'darkdata': darkMode}">
-                  <a class="btn" data-bs-toggle="collapse" href="#row22" (click)="toggleCollapse()">
+                <div class="card-header data m-0 p-2 d-flex justify-content-between align-items-baseline" [ngClass]="{'darktable': darkMode}">
+                  <a class="btn" data-bs-toggle="collapse" href="#row22" (click)="toggleCollapse()" [ngClass]="{'darka': darkMode}">
                     <span *ngIf="isCollapsed" class="me-2"><i class="bi bi-plus-circle-fill text-primary fs-5"></i></span>
                     <span *ngIf="!isCollapsed" class="me-2"><i class="bi bi-dash-circle-fill text-danger fs-5"></i></span>
                     72.2
@@ -189,12 +189,12 @@
                     <button class="button2 button accbutton" type="button">Invertir</button>
                   </div>
                 </div>
-                <div class="card-body data p-0" [ngClass]="{'darkdata': darkMode}">
+                <div class="card-body data p-0" [ngClass]="{'darktable': darkMode}">
                   <div id="row22" class="collapse" data-bs-parent="#accordion">Lorem ipsum..</div>
                 </div>
                 <!-- row32  -->
-                <div class="card-header data m-0 p-2 d-flex justify-content-between align-items-baseline" [ngClass]="{'darkdata': darkMode}">
-                  <a class="btn" data-bs-toggle="collapse" href="#row32" (click)="toggleCollapse()">
+                <div class="card-header data m-0 p-2 d-flex justify-content-between align-items-baseline" [ngClass]="{'darktable': darkMode}">
+                  <a class="btn" data-bs-toggle="collapse" href="#row32" (click)="toggleCollapse()" [ngClass]="{'darka': darkMode}">
                     <span *ngIf="isCollapsed" class="me-2"><i class="bi bi-plus-circle-fill text-primary fs-5"></i></span>
                     <span *ngIf="!isCollapsed" class="me-2"><i class="bi bi-dash-circle-fill text-danger fs-5"></i></span>
                     72.2
@@ -204,12 +204,12 @@
                     <button class="button2 button accbutton" type="button">Invertir</button>
                   </div>
                 </div>
-                <div class="card-body data p-0" [ngClass]="{'darkdata': darkMode}">
+                <div class="card-body data p-0" [ngClass]="{'darktable': darkMode}">
                   <div id="row32" class="collapse" data-bs-parent="#accordion">Lorem ipsum..</div>
                 </div>
                 <!-- row42  -->
-                <div class="card-header data m-0 p-2 d-flex justify-content-between align-items-baseline" [ngClass]="{'darkdata': darkMode}">
-                  <a class="btn" data-bs-toggle="collapse" href="#row42" (click)="toggleCollapse()">
+                <div class="card-header data m-0 p-2 d-flex justify-content-between align-items-baseline" [ngClass]="{'darktable': darkMode}">
+                  <a class="btn" data-bs-toggle="collapse" href="#row42" (click)="toggleCollapse()" [ngClass]="{'darka': darkMode}">
                     <span *ngIf="isCollapsed" class="me-2"><i class="bi bi-plus-circle-fill text-primary fs-5"></i></span>
                     <span *ngIf="!isCollapsed" class="me-2"><i class="bi bi-dash-circle-fill text-danger fs-5"></i></span>
                     72.2
@@ -219,12 +219,12 @@
                     <button class="button2 button accbutton" type="button">Invertir</button>
                   </div>
                 </div>
-                <div class="card-body data p-0" [ngClass]="{'darkdata': darkMode}">
+                <div class="card-body data p-0" [ngClass]="{'darktable': darkMode}">
                   <div id="row42" class="collapse" data-bs-parent="#accordion">Lorem ipsum..</div>
                 </div>
                 <!-- row52  -->
-                <div class="card-header data m-0 p-2 d-flex justify-content-between align-items-baseline" [ngClass]="{'darkdata': darkMode}">
-                  <a class="btn" data-bs-toggle="collapse" href="#row52" (click)="toggleCollapse()">
+                <div class="card-header data m-0 p-2 d-flex justify-content-between align-items-baseline" [ngClass]="{'darktable': darkMode}">
+                  <a class="btn" data-bs-toggle="collapse" href="#row52" (click)="toggleCollapse()" [ngClass]="{'darka': darkMode}">
                     <span *ngIf="isCollapsed" class="me-2"><i class="bi bi-plus-circle-fill text-primary fs-5"></i></span>
                     <span *ngIf="!isCollapsed" class="me-2"><i class="bi bi-dash-circle-fill text-danger fs-5"></i></span>
                     72.2
@@ -234,12 +234,12 @@
                     <button class="button2 button accbutton" type="button">Invertir</button>
                   </div>
                 </div>
-                <div class="card-body data p-0" [ngClass]="{'darkdata': darkMode}">
+                <div class="card-body data p-0" [ngClass]="{'darktable': darkMode}">
                   <div id="row52" class="collapse" data-bs-parent="#accordion">Lorem ipsum..</div>
                 </div>
                 <!-- row62  -->
-                <div class="card-header data m-0 p-2 d-flex justify-content-between align-items-baseline" [ngClass]="{'darkdata': darkMode}">
-                  <a class="btn" data-bs-toggle="collapse" href="#row62" (click)="toggleCollapse()">
+                <div class="card-header data m-0 p-2 d-flex justify-content-between align-items-baseline" [ngClass]="{'darktable': darkMode}">
+                  <a class="btn" data-bs-toggle="collapse" href="#row62" (click)="toggleCollapse()" [ngClass]="{'darka': darkMode}">
                     <span *ngIf="isCollapsed" class="me-2"><i class="bi bi-plus-circle-fill text-primary fs-5"></i></span>
                     <span *ngIf="!isCollapsed" class="me-2"><i class="bi bi-dash-circle-fill text-danger fs-5"></i></span>
                     72.2
@@ -249,7 +249,7 @@
                     <button class="button2 button accbutton" type="button">Invertir</button>
                   </div>
                 </div>
-                <div class="card-body data p-0" [ngClass]="{'darkdata': darkMode}">
+                <div class="card-body data p-0" [ngClass]="{'darktable': darkMode}">
                   <div id="row62" class="collapse" data-bs-parent="#accordion">Lorem ipsum..</div>
                 </div>
 
@@ -267,14 +267,14 @@
                 <span *ngIf="!isCollapsed" class="me-2"><i class="bi bi-dash-circle-fill text-danger fs-5"></i></span>
                 403718 - ANDREA YAMILET RANGEL QUIROZ
               </a>
-              <h4 class="btn">Paginas</h4>
+              <h4 class="btn" [ngClass]="{'dark-mode': darkMode}">Paginas</h4>
             </div>
             <!-- data  -->
             <div id="4037183" class="collapse" data-bs-parent="#accordion2">
-              <div class="card-body show data p-0" [ngClass]="{'darkdata': darkMode}">
+              <div class="card-body show data p-0" [ngClass]="{'darktable': darkMode}">
                 <!-- row13  -->
-                <div class="card-header data m-0 p-2 d-flex justify-content-between align-items-baseline" [ngClass]="{'darkdata': darkMode}">
-                  <a class="btn" data-bs-toggle="collapse" href="#row13" (click)="toggleCollapse()">
+                <div class="card-header data m-0 p-2 d-flex justify-content-between align-items-baseline" [ngClass]="{'darktable': darkMode}">
+                  <a class="btn" data-bs-toggle="collapse" href="#row13" (click)="toggleCollapse()" [ngClass]="{'darka': darkMode}">
                     <span *ngIf="isCollapsed" class="me-2"><i class="bi bi-plus-circle-fill text-primary fs-5"></i></span>
                     <span *ngIf="!isCollapsed" class="me-2"><i class="bi bi-dash-circle-fill text-danger fs-5"></i></span>
                     72.2
@@ -284,13 +284,13 @@
                     <button class="button2 button accbutton" type="button">Invertir</button>
                   </div>
                 </div>
-                <div class="card-body data p-0" [ngClass]="{'darkdata': darkMode}">
+                <div class="card-body data p-0" [ngClass]="{'darktable': darkMode}">
                   <div id="row13" class="collapse" data-bs-parent="#accordion2">Lorem ipsum..</div>
                 </div>
 
                 <!-- row23  -->
-                <div class="card-header data m-0 p-2 d-flex justify-content-between align-items-baseline" [ngClass]="{'darkdata': darkMode}">
-                  <a class="btn" data-bs-toggle="collapse" href="#row23" (click)="toggleCollapse()">
+                <div class="card-header data m-0 p-2 d-flex justify-content-between align-items-baseline" [ngClass]="{'darktable': darkMode}">
+                  <a class="btn" data-bs-toggle="collapse" href="#row23" (click)="toggleCollapse()" [ngClass]="{'darka': darkMode}">
                     <span *ngIf="isCollapsed" class="me-2"><i class="bi bi-plus-circle-fill text-primary fs-5"></i></span>
                     <span *ngIf="!isCollapsed" class="me-2"><i class="bi bi-dash-circle-fill text-danger fs-5"></i></span>
                     72.2
@@ -304,8 +304,8 @@
                   <div id="row23" class="collapse" data-bs-parent="#accordion">Lorem ipsum..</div>
                 </div>
                 <!-- row33  -->
-                <div class="card-header data m-0 p-2 d-flex justify-content-between align-items-baseline" [ngClass]="{'darkdata': darkMode}">
-                  <a class="btn" data-bs-toggle="collapse" href="#row33" (click)="toggleCollapse()">
+                <div class="card-header data m-0 p-2 d-flex justify-content-between align-items-baseline" [ngClass]="{'darktable': darkMode}">
+                  <a class="btn" data-bs-toggle="collapse" href="#row33" (click)="toggleCollapse()" [ngClass]="{'darka': darkMode}">
                     <span *ngIf="isCollapsed" class="me-2"><i class="bi bi-plus-circle-fill text-primary fs-5"></i></span>
                     <span *ngIf="!isCollapsed" class="me-2"><i class="bi bi-dash-circle-fill text-danger fs-5"></i></span>
                     72.2
@@ -315,12 +315,12 @@
                     <button class="button2 button accbutton" type="button">Invertir</button>
                   </div>
                 </div>
-                <div class="card-body data p-0" [ngClass]="{'darkdata': darkMode}">
+                <div class="card-body data p-0" [ngClass]="{'darktable': darkMode}">
                   <div id="row33" class="collapse" data-bs-parent="#accordion">Lorem ipsum..</div>
                 </div>
                 <!-- row43  -->
-                <div class="card-header data m-0 p-2 d-flex justify-content-between align-items-baseline" [ngClass]="{'darkdata': darkMode}">
-                  <a class="btn" data-bs-toggle="collapse" href="#row43" (click)="toggleCollapse()">
+                <div class="card-header data m-0 p-2 d-flex justify-content-between align-items-baseline" [ngClass]="{'darktable': darkMode}">
+                  <a class="btn" data-bs-toggle="collapse" href="#row43" (click)="toggleCollapse()" [ngClass]="{'darka': darkMode}">
                     <span *ngIf="isCollapsed" class="me-2"><i class="bi bi-plus-circle-fill text-primary fs-5"></i></span>
                     <span *ngIf="!isCollapsed" class="me-2"><i class="bi bi-dash-circle-fill text-danger fs-5"></i></span>
                     72.2
@@ -330,12 +330,12 @@
                     <button class="button2 button accbutton" type="button">Invertir</button>
                   </div>
                 </div>
-                <div class="card-body data p-0" [ngClass]="{'darkdata': darkMode}">
+                <div class="card-body data p-0" [ngClass]="{'darktable': darkMode}">
                   <div id="row43" class="collapse" data-bs-parent="#accordion">Lorem ipsum..</div>
                 </div>
                 <!-- row53  -->
-                <div class="card-header data m-0 p-2 d-flex justify-content-between align-items-baseline" [ngClass]="{'darkdata': darkMode}">
-                  <a class="btn" data-bs-toggle="collapse" href="#row53" (click)="toggleCollapse()">
+                <div class="card-header data m-0 p-2 d-flex justify-content-between align-items-baseline" [ngClass]="{'darktable': darkMode}">
+                  <a class="btn" data-bs-toggle="collapse" href="#row53" (click)="toggleCollapse()" [ngClass]="{'darka': darkMode}">
                     <span *ngIf="isCollapsed" class="me-2"><i class="bi bi-plus-circle-fill text-primary fs-5"></i></span>
                     <span *ngIf="!isCollapsed" class="me-2"><i class="bi bi-dash-circle-fill text-danger fs-5"></i></span>
                     72.2
@@ -345,12 +345,12 @@
                     <button class="button2 button accbutton" type="button">Invertir</button>
                   </div>
                 </div>
-                <div class="card-body data p-0" [ngClass]="{'darkdata': darkMode}">
+                <div class="card-body data p-0" [ngClass]="{'darktable': darkMode}">
                   <div id="row53" class="collapse" data-bs-parent="#accordion">Lorem ipsum..</div>
                 </div>
                 <!-- row63  -->
-                <div class="card-header data m-0 p-2 d-flex justify-content-between align-items-baseline" [ngClass]="{'darkdata': darkMode}">
-                  <a class="btn" data-bs-toggle="collapse" href="#row63" (click)="toggleCollapse()">
+                <div class="card-header data m-0 p-2 d-flex justify-content-between align-items-baseline" [ngClass]="{'darktable': darkMode}">
+                  <a class="btn" data-bs-toggle="collapse" href="#row63" (click)="toggleCollapse()" [ngClass]="{'darka': darkMode}">
                     <span *ngIf="isCollapsed" class="me-2"><i class="bi bi-plus-circle-fill text-primary fs-5"></i></span>
                     <span *ngIf="!isCollapsed" class="me-2"><i class="bi bi-dash-circle-fill text-danger fs-5"></i></span>
                     72.2
@@ -360,7 +360,7 @@
                     <button class="button2 button accbutton" type="button">Invertir</button>
                   </div>
                 </div>
-                <div class="card-body data p-0" [ngClass]="{'darkdata': darkMode}">
+                <div class="card-body data p-0" [ngClass]="{'darktable': darkMode}">
                   <div id="row63" class="collapse" data-bs-parent="#accordion">Lorem ipsum..</div>
                 </div>
 

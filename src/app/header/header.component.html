@@ -40,7 +40,7 @@
   </div>
 
   <!-- rightside icons  -->
-  <div class="d-flex justify-content-end align-items-center">
+  <div class="d-flex justify-content-end align-items-center position-relative">
     <!-- theme toggle  -->
     <div class="app-navbar-item me-3">
       <label class="switch">
@@ -326,9 +326,9 @@
         <h3 class="m-3">Chat</h3>
         <div class="d-flex justify-content-between align-items-center px-3 mb-3">
           <div class="d-flex">
-            <div>
+            <div class="position-relative">
               <img src="../../assets/images/avatar/Ellipse 62.png" alt="" width="40" height="40">
-              <span class="badge rounded-circle offline me-1">.</span>
+              <span class="badge rounded-circle offline me-1 down">.</span>
             </div>
             <div>
               <h5 class="mb-0">Khramirezvaz</h5>
@@ -340,9 +340,9 @@
 
         <div class="d-flex justify-content-between align-items-center px-3 mb-3">
           <div class="d-flex">
-            <div>
+            <div class="position-relative">
               <img src="../../assets/images/avatar/Ellipse 61.png" alt="" width="40" height="40">
-              <span class="badge rounded-circle offline me-1">.</span>
+              <span class="badge rounded-circle offline me-1 down">.</span>
             </div>
             <div>
               <h5 class="mb-0">Bibana</h5>
@@ -354,9 +354,9 @@
 
         <div class="d-flex justify-content-between align-items-center px-3 mb-3">
           <div class="d-flex">
-            <div>
+            <div class="position-relative">
               <img src="../../assets/images/avatar/Ellipse 65.png" alt="" width="40" height="40">
-              <span class="badge rounded-circle userbadge me-1">.</span>
+              <span class="badge rounded-circle userbadge px-1 me-1 down" style="line-height: 0.2; background-color: #66FD75;">.</span>
             </div>
 
             <div>
@@ -375,7 +375,7 @@
       <button class="d-block  d-flex align-items-center" data-bs-toggle="dropdown" data-bs-target="#notification"
         data-bs-auto-close="outside">
         <i class="bi bi-bell-fill fs-5" [ngClass]="{'darkbi': darkMode}"></i>
-        <span class="rounded-circle px-1 up bg-danger badge">3</span>
+        <span class="rounded-circle  px-1 up bg-danger badge">3</span>
       </button>
       <div class="dropdown-menu p-0" id="notification">
         <div style="background-color: #33b5ff;" class="d-flex justify-content-between p-2 rounded-top-3">
@@ -461,7 +461,7 @@
       <button type="button" class="but dropdown-toggle d-flex align-items-center pe-2 text-light-emphasis"
         data-bs-toggle="dropdown">
         <div class="d-flex align-items-end position-relative bg-transparent" [ngClass]="{'dark-mode': darkMode}">
-          <img class="rounded-circle me-2" width="40" height="40" src="../../assets/images/avatar/Ellipse 1.png" alt="">
+          <img class="rounded-circle" width="40" height="40" src="../../assets/images/avatar/Ellipse 1.png" alt="">
           <span class="notification-dot down" style="background-color: #66FD75;"></span>
         </div>
         Andrea
