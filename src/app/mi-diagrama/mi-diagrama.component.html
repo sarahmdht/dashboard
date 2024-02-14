@@ -7,8 +7,30 @@
 </div>
 
 <!-- tree served area to add its logic inside the div   -->
+<div class="main h-100 m-0 p-4" [ngClass]="{'darkmain': darkMode}">
+<div class="container bg  d-flex align-items-center justify-content-center overflow-hidden p-4">
+    <!-- 1 hexagon -->
+    <div class="user d-flex flex-column justify-content-center align-items-center p-4" data-bs-toggle="collapse"
+        data-bs-target="#tree">
+        <img src="../../assets/images/avatar/Ellipse 61.png" alt="main user" width="40" height="40">
+        <div class="d-flex">
+            <img src="../../assets/images/weapons/Piramide-Consecutivos 1.png" alt="achievements" width="20"
+                height="20">
+            <img src="../../assets/images/weapons/Piramide-Consecutivos 1.png" alt="achievements" width="20"
+                height="20">
+        </div>
+        <h5 class="fw-bold mb-0" style="font-size: 8px;">Layda Pamela Cabrera</h5>
+        <p>Instalado 30 dias:<b>$18950</b></p>
+        <p>consecutivos:<b>2</b></p>
+        <p>Inversion:<b>$597.96</b></p>
+    </div>
+    <!-- hexagon end -->
 
-<div class="container bg">
-    <img src="../../assets/images/Tree - Active Users.png" height="500" width="500" class="m-2" alt="">
-
+    <!-- The next part will be replaced with logic and API -->
+    <div id="tree" class="collapse position-absolute">
+        <div class="d-flex flex-column justify-content-center align-items-center">
+            <img src="../../assets/images/tree/Group 64.png" alt="tree" width="950" height="1000">
+        </div>
+    </div>
+</div>
 </div>

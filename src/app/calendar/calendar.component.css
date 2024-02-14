@@ -19,3 +19,39 @@
     border-radius: 0 20% 20% 0;
     padding: 4px;
 }
+
+.bg-orange {
+    background-image: linear-gradient(#fed27d, #ecb343);
+}
+
+.bg-red{
+background-image: linear-gradient(#fd7174,#ea464a);
+}
+
+.bg-green{
+background-image: linear-gradient(#c5eb6d, #9fd327);
+}
+
+.bg-yellow{
+background-image: linear-gradient(#feed5a, #efdd3a);
+}
+
+table, th, td {
+    border: 1px solid #4d4d4d;
+    border-collapse: collapse;
+}
+
+td div {
+    border-radius: 12px;
+}
+
+th{
+padding: 1rem;
+text-align: center;
+}
+
+.calendar {
+    background-color: white;
+    border: 1px solid #4d4d4d;
+    border-radius: 12px;
+}

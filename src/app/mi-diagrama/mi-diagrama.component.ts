@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { ThemeServicesService } from '../services/theme-services.service';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-mi-diagrama',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './mi-diagrama.component.html',
   styleUrl: './mi-diagrama.component.css'
 })
