@@ -1,6 +1,10 @@
-# Pakoa
+# Dashboard
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.6.
+
+## Project description
+
+A dashboard template built with Angular 17 and Bootstrap 5,  with charts using "angular high charts". 
 
 ## Development server
 
